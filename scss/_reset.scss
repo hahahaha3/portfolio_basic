@@ -1,0 +1,32 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ul, ol, li {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+.hidden {
+    position: absolute;
+    top: -9999px;
+    opacity: 0;
+}
+.wrap::after {
+    content: ' ';
+    display: block;
+    clear: both;
+}
+/* 앞으로 wrap는 플롯 해제할때만 사용하기! */
+
+fieldset {
+    border: none;
+}
+
+table {
+    border-collapse: collapse;
+}
