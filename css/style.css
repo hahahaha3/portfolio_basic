@@ -1042,12 +1042,12 @@ figure.pop .btnClose {
 #header .inner .menuWeb #gnb {
   position: absolute;
   right: 0;
-  bottom: 7px;
+  bottom: 0px;
 }
-#header .inner .menuWeb #gnb > li {
+#header .inner .menuWeb #gnb .depth1 {
   float: left;
 }
-#header .inner .menuWeb #gnb > li > a {
+#header .inner .menuWeb #gnb .depth1 a {
   width: 170px;
   display: block;
   padding: 14px 40px;
@@ -1055,32 +1055,40 @@ figure.pop .btnClose {
   color: #fff;
   text-align: center;
 }
-#header .inner .menuWeb #gnb > li > a:hover, #header .inner .menuWeb #gnb > li > a.on {
+#header .inner .menuWeb #gnb .depth1:hover {
   background: #fff;
+}
+#header .inner .menuWeb #gnb .depth1:hover a {
   color: #131c55;
 }
-#header .inner .menuWeb #gnb > li .sub {
+#header .inner .menuWeb #gnb .depth1 ul {
   background: #fff;
   height: auto;
   position: absolute;
   display: none;
+  z-index: 5;
 }
-#header .inner .menuWeb #gnb > li .sub a {
+#header .inner .menuWeb #gnb .depth1 ul a {
+  height: 40px;
   position: relative;
-  display: flex;
-  top: 20px;
   font: normal 10px/1.2 "arial";
   color: #131c55;
 }
-#header .inner .menuWeb #gnb > li .sub::before {
+#header .inner .menuWeb #gnb .depth1 ul a:hover {
+  background: orangered;
+  opacity: 0.7;
+}
+#header .inner .menuWeb #gnb .depth1 ul::before {
   content: " ";
   display: block;
   width: 170px;
-  height: 150px;
   background: #fff;
   position: absolute;
   top: 0;
   left: 0;
+}
+#header .inner .menuWeb #gnb .depth1:hover ul {
+  display: block;
 }
 #header .inner .menuWeb .util {
   position: absolute;
@@ -1694,7 +1702,6 @@ figure.pop .btnClose {
 }
 #banner > .inner > .wrap article:nth-of-type(4) {
   width: 100%;
-  height: 160px;
   display: flex;
   justify-content: space-between;
   transform: translateY(-120px);
