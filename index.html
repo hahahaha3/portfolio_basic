@@ -5,9 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>포트폴리오</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+
+
     <script src="https://kit.fontawesome.com/21974f618d.js" crossorigin="anonymous"></script>
     <script defer src="js/main.js"></script>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <header id="header">
@@ -88,27 +92,63 @@
     <figure id="visual">
         <div class="inner">
             <div class="wrap">
-                <article>
+                <article class="main_article">
                     <h1>A380</h1>
                     <a href="#">VIEW OUR PORTFOLIO</a>
                     <img src="img/a380.png" alt="메인이미지1">
                 </article>
-                <article>                    
-                    <h2><a href="#">The iconic A380 has flown over 800,000 flights carrying more than 300 million passengers since its entry into service.</a></h2>
-                    <div class="pic">
-                        <img src="img/airport0.jpeg" alt="메인이미지2">
+
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide slide1">
+                            <article class="sub_article1">           
+                                <h2><a href="#">The iconic A380 has flown over 800,000 flights carrying more than 300 million passengers since its entry into service.</a></h2>
+                                <div class="pic">
+                                    <img src="img/article1.jpeg" alt="메인이미지2">
+                                </div>
+                                <p>&nbsp;Combining the most advanced aviation technology and an inspired cabin design, Airbus is proud to have created an aircraft celebrated for its outstanding quality in every aspect. Leading the industry in standards for innovation, it is appreciated by passengers, pilots and crew alike.</p>
+                            </article>
+                            <article class="sub_article2">
+                                <h2><a href="#">The A380 will keep flying for decades to come, and Airbus is continuing to fully support A380 operators and their fleets.</a></h2>
+                                <p>&nbsp;The A380 will keep flying for decades to come, and Airbus is continuing to fully support A380 operators and their fleets.
+                                    The A380 has set a new standard. Not only did it usher in a new era for passenger comfort, the A380 also raised the bar for environmental standards with its low fuel consumption per passenger and low noise levels – as well as reduced CO2 and NOx emissions, which has been passed on to future aircraft generations.</p>
+                            </article>
+                        </div>
+
+                        <div class="swiper-slide slide2">
+                            <article class="sub_article1">           
+                                <h2><a href="#">Airbus preparing for an independent legal assessment in response to customer disagreement over A350 surface degradation</a></h2>
+                                <div class="pic">
+                                    <img src="img/article2.jpeg" alt="메인이미지2">
+                                </div>
+                                <p>&nbsp;satellite communication services for military and governmental use. As the leading provider of military satellite communication services in Europe, Airbus will offer new communication services utilising the OneWeb constellation to select European and UK armed forces, and civil protection and security forces, from the end of 2021.</p>
+                            </article>
+                            <article class="sub_article2">
+                                <h2><a href="#">Airbus gains first A220 and A330 Flight Hour Services customers in Africa with Air Tanzania and Uganda Airlines</a></h2>
+                                <p>&nbsp;The A380 will keep flying for decades to come, and Airbus is continuing to fully support A380 operators and their fleets.
+                                    The A380 has set a new standard. Not only did it usher in a new era for passenger comfort, the A380 also raised the bar for environmental standards with its low fuel consumption per passenger and low noise levels – as well as reduced CO2 and NOx emissions, which has been passed on to future aircraft generations.</p>
+                            </article>
+                        </div>
+
+                        <div class="swiper-slide slide3">
+                            <article class="sub_article1">           
+                                <h2><a href="#">Industry first: Loft Orbital signs agreement with Airbus to procure more than fifteen Arrow satellite platforms</a></h2>
+                                <div class="pic">
+                                    <img src="img/article3.jpeg" alt="메인이미지2">
+                                </div>
+                                <p>&nbsp;The improvements to the Arrow platform, including all the engineering, qualification, test, and production of the first few spacecraft will be performed by Airbus in Toulouse. The production at scale of the remaining Arrow-derived platforms will be performed by Airbus OneWeb Satellites </p>
+                            </article>
+                            <article class="sub_article2">
+                                <h2><a href="#">Zephyr High Altitude Platform Station (HAPS) achieves connectivity in trial conducted by Airbus and NTT DOCOMO</a></h2>
+                                <p>&nbsp;The A380 will keep flying for decades to come, and Airbus is continuing to fully support A380 operators and their fleets.
+                                    The A380 has set a new standard. Not only did it usher in a new era for passenger comfort, the A380 also raised the bar for environmental standards with its low fuel consumption per passenger and low noise levels – as well as reduced CO2 and NOx emissions, which has been passed on to future aircraft generations.</p>
+                            </article>
+                        </div>
+
+
                     </div>
-                    <p>Combining the most advanced aviation technology and an inspired cabin design, Airbus is proud to have created an aircraft celebrated for its outstanding quality in every aspect. Leading the industry in standards for innovation, it is appreciated by passengers, pilots and crew alike.</p>
-                </article>
-                <article>
-                    <h2><a href="#">The A380 will keep flying for decades to come, and Airbus is continuing to fully support A380 operators and their fleets.</a></h2>
-                    <p>The A380 has set a new standard. Not only did it usher in a new era for passenger comfort, the A380 also raised the bar for environmental standards with its low fuel consumption per passenger and low noise levels – as well as reduced CO2 and NOx emissions, which has been passed on to future aircraft generations. </p>
-                </article>
-                <ul class="visual_Btns">
-                    <li class="on"><a href="#"></a></li>
-                    <li><a href="#"></a></li>
-                    <li><a href="#"></a></li>
-                </ul>
+                    <div class="swiper-pagination"></div>
+                </div>
             </div>
         </div>
     </figure>

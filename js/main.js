@@ -20,34 +20,20 @@ btnCall.onclick = function(e) {
 }
 
 
-/* header ------------------------------- */
-const gnb_lis = document.querySelectorAll('#gnb>li');
-console.log(gnb_lis);
-
-gnb_lis.forEach(li => {
-    li.addEventListener('mouseenter', e => {
-        const sub = e.currentTarget.querySelector('.sub');
-        sub.style.display = 'block';
-
-        const depth1 = e.currentTarget.children[0];
-        depth1.classList.add('on');
-    });
-
-    li.addEventListener('mouseleave', e => {
-        const sub = e.currentTarget.querySelector('.sub');
-        sub.style.display = 'none';
-        const depth1 = e.currentTarget.querySelector('a');
-        depth1.classList.remove('on');
-    });
-
-    li.addEventListener('focusin', e => {
-        const sub = e.currentTarget.querySelector('.sub');
-        sub.style.display='block';
-    });
-
-    const sub = li.querySelector('.sub li');
-    const lastEl = sub.lastElementChild;
-    lastEl.addEventListener('focusout', e => {
-        e.currentTarget.closest('.sub').style.display = 'none';
-    });
-})
+var swiper = new Swiper(".mySwiper", {
+    slidesPerView: 1,
+    spaceBetween: 30,
+    loop: true,
+    autoplay: {
+        delay: 5000,
+        disableOnInteraction: false,
+    },
+    pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+    },
+    keyboard: {
+        enabled: true,
+    },
+    mousewheel: true,        
+});
