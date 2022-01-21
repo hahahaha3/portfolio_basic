@@ -5,12 +5,27 @@
 }
 
 .about {
-    .sub_visual {
+    .sub {
+        width: 100%;
         height: 300px;
         background-color: #000;
-        background: url(../img/ttt.jpeg) no-repeat center/cover;
+        .sub_h2 {
+            display: inline-block;
+            position: relative;
+            margin-bottom: 20px;
+            .sub_inner {
+                font: bold 100px/1 'arial';
+                color: #fff;
+                transition: opacity 0.2s 0.5s;
+                transform: translate(120px, -280px);
+            }
+        }
+        .sub_visual {
+            height: 300px;
+            background: url(../img/ttt.jpeg) no-repeat center/cover;
+            opacity: 0.5;
+        }
     }
-
     .division {
         width: 100%;
         height: 600px;
