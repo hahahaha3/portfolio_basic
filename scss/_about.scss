@@ -1,6 +1,14 @@
-.department {
+#header {
+	.inner {
+		border: none;
+    }
+}
+
+.about {
     .sub_visual {
-        background: url(../img/brand4.jpg) no-repeat center/cover;
+        height: 300px;
+        background-color: #000;
+        background: url(../img/ttt.jpeg) no-repeat center/cover;
     }
 
     .division {
@@ -98,7 +106,7 @@
 
 /* tablet ------------------------- */
 @media screen and (max-width:$tablet) {
-    .department {
+    .about {
         .division {
             height: 60vw;
         }
@@ -107,7 +115,7 @@
 
 /* mobile ------------------------- */
 @media screen and (max-width:$mobile) {
-    .department {
+    .about {
         .division {
             background: none;
             height: auto;

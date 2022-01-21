@@ -1062,20 +1062,26 @@ table {
     margin: 5px;
   }
 }
-.department .sub_visual {
-  background: url(../img/brand4.jpg) no-repeat center/cover;
+#header .inner {
+  border: none;
 }
-.department .division {
+
+.about .sub_visual {
+  height: 300px;
+  background-color: #000;
+  background: url(../img/ttt.jpeg) no-repeat center/cover;
+}
+.about .division {
   width: 100%;
   height: 600px;
   background: url(../img/bgDIvision.jpeg) no-repeat center/contain;
 }
-.department .division .div_tree {
+.about .division .div_tree {
   position: absolute;
   top: -9999px;
   opacity: 0;
 }
-.department .division .div_tree li span {
+.about .division .div_tree li span {
   display: block;
   width: 40%;
   height: 50px;
@@ -1087,7 +1093,7 @@ table {
   margin-bottom: 20px;
   position: relative;
 }
-.department .division .div_tree li span::after {
+.about .division .div_tree li span::after {
   content: " ";
   display: block;
   width: 1px;
@@ -1097,11 +1103,11 @@ table {
   top: 50px;
   left: 50px;
 }
-.department .division .div_tree li ul li span {
+.about .division .div_tree li ul li span {
   background: #666;
   transform: translateX(70px);
 }
-.department .division .div_tree li ul li span::before {
+.about .division .div_tree li ul li span::before {
   content: " ";
   display: block;
   width: 20px;
@@ -1111,48 +1117,48 @@ table {
   top: 50%;
   left: -20px;
 }
-.department .division .div_tree li ul li:nth-of-type(1) span::after {
+.about .division .div_tree li ul li:nth-of-type(1) span::after {
   display: none;
 }
-.department .division .div_tree li ul li:nth-of-type(2) span::after {
+.about .division .div_tree li ul li:nth-of-type(2) span::after {
   display: none;
 }
-.department .division .div_tree li ul li:nth-of-type(3) span::after {
+.about .division .div_tree li ul li:nth-of-type(3) span::after {
   height: 115px;
 }
-.department .division .div_tree li ul li:nth-of-type(4) span::after {
+.about .division .div_tree li ul li:nth-of-type(4) span::after {
   height: 185px;
 }
-.department .division .div_tree li ul li:nth-of-type(5) span::after {
+.about .division .div_tree li ul li:nth-of-type(5) span::after {
   height: 115px;
 }
-.department .division .div_tree li ul li:nth-of-type(6) span::after {
+.about .division .div_tree li ul li:nth-of-type(6) span::after {
   height: 185px;
 }
-.department .division .div_tree li ul li:nth-of-type(7) span::after {
+.about .division .div_tree li ul li:nth-of-type(7) span::after {
   height: 115px;
 }
-.department .division .div_tree li ul li ul li span {
+.about .division .div_tree li ul li ul li span {
   background: #999;
   transform: translateX(140px);
 }
-.department .division .div_tree li ul li ul li span::after {
+.about .division .div_tree li ul li ul li span::after {
   display: none;
 }
 
 /* tablet ------------------------- */
 @media screen and (max-width: 1179px) {
-  .department .division {
+  .about .division {
     height: 60vw;
   }
 }
 /* mobile ------------------------- */
 @media screen and (max-width: 539px) {
-  .department .division {
+  .about .division {
     background: none;
     height: auto;
   }
-  .department .division .div_tree {
+  .about .division .div_tree {
     position: relative;
     top: 0;
     opacity: 1;
