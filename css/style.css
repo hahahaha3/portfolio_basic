@@ -455,8 +455,8 @@
   position: relative;
   display: block;
   height: 25px;
-  font: bold 15px/1 "arial";
-  letter-spacing: 3px;
+  font: bold 15px/1 "Oswald";
+  letter-spacing: 1px;
   color: rgba(0, 0, 0, 0.5);
 }
 #event .inner .wrap article:nth-of-type(2) {
