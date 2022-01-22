@@ -7,23 +7,93 @@
     <title>회원가입</title>
     <script src="https://kit.fontawesome.com/21974f618d.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/style.css">
-    <script defer src="js/main.js"></script>
-    <script defer src="js/gallery.js"></script>
-
+    <script defer src="js/join.js"></script>
+    <script>
+        window.addEventListener("load", ()=>{
+            new Validation("#member", [
+            {
+                type : "text", 
+                name : "userid", 
+                len : 5
+            }, 
+            {
+                type : "text", 
+                name : "comments", 
+                len :20 
+            }, 
+            {
+                type : "email", 
+                name : "email"
+            }, 
+            {
+                type :"check", 
+                name : "gender"
+            }, 
+            {
+                type : "check", 
+                name : "hobby"
+            }, 
+            {
+                type : "select", 
+                name : "edu"
+            }, 
+            {
+                type :"password", 
+                name : ["pwd1","pwd2"],
+                len : 5
+            }
+        ])
+    })
+        
+    </script>
 </head>
 <body>
 
-    <header id="header_sub">
+    <header id="header">
         <div class="inner">
             <h1><a href="index.html">DCODELAB</a></h1>
+
             <nav class="menuWeb">
                 <ul id="gnb">
-                    <li><a href="department.html">DEPARTMENT</a></li>
-                    <li><a href="youtube.html">YOUTUBE</a></li>
-                    <li><a href="community.html">COMMUNITY</a></li>
-                    <li><a href="gallery.html">GALLERY</a></li>
-                    <li><a href="location.html">LOCATION</a></li>
+                    <li class="depth1">
+                        <a href="about.html">ABOUT</a>
+                        <ul>
+                            <li class="depth2"><a href="about.html">ABOUT US</a></li>
+                        </ul>
+                    </li>
+                    <li class="depth1">
+                        <a href="youtube.html">YOUTUBE</a>                            
+                        <ul>
+                            <li class="depth2"><a href="youtube.html">GALLERY</a></li>
+                            <li class="depth2"><a href="#">2depth2</a></li>
+                        </ul>
+                    </li>
+                    <li class="depth1">
+                        <a href="community.html">COMMUNITY</a>
+                        <ul>
+                            <li class="depth2"><a href="community.html">COMMUNITY</a></li>
+                            <li class="depth2"><a href="#">2depth3</a></li>
+                            <li class="depth2"><a href="#">2depth3</a></li>
+                        </ul>
+                    </li>
+                    <li class="depth1">
+                        <a href="gallery.html">GALLERY</a>
+                        <ul>
+                            <li class="depth2"><a href="gallery.html">GALLERY</a></li>
+                            <li class="depth2"><a href="#">2depth4</a></li>
+                            <li class="depth2"><a href="#">2depth4</a></li>
+                            <li class="depth2"><a href="#">2depth4</a></li>
+                        </ul>
+                    </li>
+                    <li class="depth1">
+                        <a href="location.html">LOCATION</a>
+                        <ul>
+                            <li class="depth2"><a href="location.html">LOCATION</a></li>
+                            <li class="depth2"><a href="#">2depth5</a></li>
+                        </ul>
+                    </li>
                 </ul>
+
                 <ul class="util">
                     <li><a href="#">CONTACT</a></li>
                     <li><a href="#">HELP</a></li>
@@ -44,7 +114,7 @@
                 </h1>
 
                 <ul id="gnbMo">
-                    <li><a href="department.html">DEPARTMENT</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
                     <li><a href="youtube.html">YOUTUBE</a></li>
                     <li><a href="community.html">COMMUNITY</a></li>
                     <li><a href="gallery.html">GALLERY</a></li>
@@ -55,9 +125,11 @@
     </header>
 
     <section class="content join">
-        <div class="sub_visual"></div>
+        <div class="sub">
+            <div class="sub_visual"></div>
+                <h2 class="sub_h2">JOIN</h2>
+        </div>
         <div class="inner">
-            <h1>JOIN <span>회원가입</span></h1>
             <form action="result.html" method="get" id="member">
                 <fieldset>    <!-- 폼요소안에서 그룹을 나눌 수 있음 -->
                     <legend class="hidden">회원가입 폼 입력 양식</legend>
@@ -77,40 +149,32 @@
                         <tbody>
                             <!-- userid -->
                             <tr>
-                                <th scope="row">
-                                    <label for="userid">USER ID</label>
-                                </th>
+                                <th scope="row"><label for="userid">USER ID</label></th>
                                 <td>
-                                    <input type="text" name="userid" id="userid" placeholder="아이디를 입력하세요">
+                                    <input type="text" name="userid" id="userid" placeholder="아이디를 입력하세요" required>
                                 </td>
                             </tr>
                             <!-- password -->
                             <tr>
-                                <th scope="row">
-                                    <label for="password">PASSWORD</label>
-                                </th>
+                                <th scope="row"><label for="pwd1">PASSWORD</label></th>
                                 <td>
-                                    <input type="password" name="pwd1" id="pwd1" placeholder="비밀번호를 입력하세요">
+                                    <input type="password" name="pwd1" id="pwd1" placeholder="비밀번호를 입력하세요" required>
                                 </td>
                             </tr>
                             <tr>
-                                <th scope="row">
-                                    <label for="password">RE PASSWORD</label>
-                                </th>
+                                <th scope="row"><label for="pwd2">RE PASSWORD</label></th>
                                 <td>
-                                    <input type="password" name="pwd2" id="pwd2" placeholder="비밀번호를 재입력하세요">
+                                    <input type="password" name="pwd2" id="pwd2" placeholder="비밀번호를 재입력하세요" required>
                                 </td>
                             </tr>
                             <!-- email -->
                             <tr>
-                                <th scope="row">
-                                    <label for="email">E-MAIL</label>
-                                </th>
+                                <th scope="row"><label for="email">E-MAIL</label></th>
                                 <td>
-                                    <input type="text" name="email" id="email" placeholder="이메일 주소를 입력하세요">
+                                    <input type="text" name="email" id="email" placeholder="이메일 주소를 입력하세요" required>
                                     <select name="company" id="company">
                                         <option value="naver">@naver.com</option>
-                                        <option value="gamil">@gamil.com</option>
+                                        <option value="gmail">@gamil.com</option>
                                         <option value="daum">@daum.net</option>
                                         <option value="">직접입력</option>
                                     </select>
@@ -118,12 +182,10 @@
                             </tr>
                             <!-- city -->
                             <tr>
-                                <th scope="row">
-                                    <label for="city">CITY</label>
-                                </th>
+                                <th scope="row"><label for="city">CITY</label></th>
                                 <td>
                                     <select name="city" id="city">
-                                        <option value="">사는곳을 선택하세요</option>
+                                        <option value="">사는 곳을 선택하세요</option>
                                         <option value="seoul">서울</option>
                                         <option value="Gyeonggi">경기</option>
                                         <option value="busan">부산</option>
@@ -155,6 +217,20 @@
                                 <label for="game">Game</label>
                                 </td>
                             </tr>
+                            <!-- comments -->
+                            <tr>
+                                <th scope="row"><label for="comments">Comments</label></th>
+                                <td>
+                                    <textarea name="comments" id="comments" placeholder="남기는 말을 입력하세요" required></textarea>
+                                </td>
+                            </tr>
+                            <!-- btns -->
+                            <tr>
+                                <th colspan="2">
+                                    <input type="reset" value="cancel">
+                                    <input type="submit" value="submit">
+                                </th>
+                            </tr>
                         </tbody>
                     </table>
                 </fieldset>
@@ -162,7 +238,7 @@
         </div>
     </section>
 
-    <footer id="footer_sub">
+    <footer id="footer">
         <div class="inner">
             <h1>DCODELAB</h1>
             <ul>
@@ -173,10 +249,10 @@
             </ul>
 
             <address>
-                address: Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, nobis! <br/>
+                Address: Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, nobis! <br/>
                 TEL : +82-2-2100-2114 FAX : +82-2-2100-7999
             </address>
-            <p>Copyright &copy; 2021 DCODELAB ALL right reserved.</p>
+            <p>Copyright &copy; 2022 DCODELAB ALL right reserved.</p>
         </div>
     </footer>
 </body>

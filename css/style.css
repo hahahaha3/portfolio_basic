@@ -1572,12 +1572,30 @@ aside .close {
     width: 100%;
   }
 }
-.join .sub_visual {
-  background: #efefef;
+.join .sub {
+  width: 100%;
+  height: 300px;
+  background-color: #000;
+  position: relative;
+}
+.join .sub .sub_visual {
+  width: 100%;
+  height: 300px;
+  background: url(../img/a350.jpeg) no-repeat center/cover;
+  opacity: 0.5;
+}
+.join .sub .sub_h2 {
+  width: 100%;
+  top: -250px;
+  left: 10%;
+  position: relative;
+  font: bold 80px/1 "arial";
+  color: #fff;
 }
 .join .inner h2 {
+  margin-top: 100px;
   font: bold 18px/1 "arial";
-  color: #555;
+  color: #131c55;
   margin-bottom: 20px;
 }
 .join .inner #terms {
@@ -1598,47 +1616,58 @@ aside .close {
 }
 .join .inner table {
   width: 100%;
-  border-top: 2px solid #999;
-  border-bottom: 2px solid #999;
+  border-top: 2px solid #131c55;
+  border-bottom: 2px solid #131c55;
 }
 .join .inner table th {
   width: 20%;
   text-align: left;
   font: bold 14px/1 "arial";
-  color: #666;
+  color: #131c55;
   padding: 20px 30px;
-  border-right: 1px solid #bbb;
-  border-bottom: 1px solid #bbb;
-  background: #eee;
+  border-right: 1px solid #131c55;
+  border-bottom: 1px solid #131c55;
 }
 .join .inner table th:last-child {
   background: #fff;
   text-align: center;
   border-right: none;
 }
-.join .inner table th input[type=submit], .join .inner table th input[type=reset] {
+.join .inner table th input[type=reset], .join .inner table th input[type=submit] {
   width: 150px;
   height: 40px;
-  border: none;
-  background: #444;
+  border: 1px solid #131c55;
+  background: #fff;
   font: bold 14px/1 "arial";
-  color: #eee;
+  color: #131c55;
   margin: 0 10px;
 }
+.join .inner table th input[type=reset]:hover, .join .inner table th input[type=submit]:hover {
+  background: #131c55;
+  color: #fff;
+}
 .join .inner table td {
-  border-bottom: 1px solid #bbb;
+  border-bottom: 1px solid #131c55;
   padding: 20px 30px;
 }
-.join .inner table td input[type=text], .join .inner table td input[type=password] {
+.join .inner table td input[type=text], .join .inner table td input[type=password], .join .inner table td select {
   width: 30%;
   height: 30px;
-  border: 1px solid #bbb;
-  background: #eeeeee;
+  border: 1px solid #131c55;
+  background: #fff;
   padding-left: 20px;
 }
 .join .inner table td input[type=checkbox], .join .inner table td input[type=radio] {
   margin-right: 5px;
   transform: translateY(2px);
+}
+.join .inner table td textarea {
+  resize: none;
+  width: 60%;
+  height: 150px;
+  background: rgba(0, 0, 0, 0.03);
+  padding: 10px;
+  border: 1px solid #131c55;
 }
 .join .inner table td label {
   margin-right: 30px;
@@ -1646,15 +1675,15 @@ aside .close {
 .join .inner table td select#company {
   width: 20%;
   height: 30px;
-  border: 1px solid #bbb;
-  background: #eeeeee;
+  border: 1px solid #131c55;
+  background: #fff;
   padding-left: 20px;
 }
 .join .inner table td textarea#comments {
   width: 80%;
   height: 100px;
-  border: 1px solid #bbb;
-  background: #eeeeee;
+  border: 1px solid #131c55;
+  background: #fff;
   resize: none;
   padding: 20px;
 }
@@ -1663,6 +1692,11 @@ aside .close {
   color: lightpink;
   margin-top: 10px;
   display: none;
+}
+.join .inner table td p {
+  font: 11px/1 "맑은 고딕";
+  color: orangered;
+  margin-top: 5px;
 }
 
 /* tablet ------------------------------------------ */
