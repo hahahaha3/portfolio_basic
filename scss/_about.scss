@@ -9,27 +9,90 @@
         width: 100%;
         height: 300px;
         background-color: #000;
-        .sub_h2 {
-            display: inline-block;
-            position: relative;
-            margin-bottom: 20px;
-            .sub_inner {
-                font: bold 100px/1 'arial';
-                color: #fff;
-                transition: opacity 0.2s 0.5s;
-                transform: translate(120px, -280px);
-            }
-        }
+        position: relative;
         .sub_visual {
             height: 300px;
             background: url(../img/ttt.jpeg) no-repeat center/cover;
             opacity: 0.5;
         }
+        .sub_inner {
+            .sub_h2 {
+                top: -250px;
+                left: 10%;
+                position: relative;
+                font: bold 80px/1 'arial';
+                color: #fff;
+                opacity: 1;
+        }
+
+        }
     }
     .division {
         width: 100%;
-        height: 600px;
-        background: url(../img/bgDIvision.jpeg) no-repeat center/contain;
+        height: 800px;
+        .profile {
+            .wrap {
+                article {
+                    position: relative;
+                    margin: 30px 20px 20px 0;
+                    width: 280px;
+                    float: left;
+                    &:nth-of-type(4n) {
+                        margin-right: 0;
+                    }
+                    img {
+                        position: relative;
+                        max-width: 100%;
+                        vertical-align: top;
+                    }
+                    .txtBox {
+                        position: absolute;
+                        top: 0;
+                        right: 0;
+                        width: 100%;
+                        height: 100%;
+                        z-index: 1;
+                        opacity: 0;
+                        padding: 20px 30px;
+                        margin-top: 50%;
+                        h2 {
+                            width: 100%;
+                            font:bold 30px/1 'arial';
+                            margin-bottom: 20px;
+                            color: #131c55;
+                            text-transform: uppercase;
+                        }
+                        p {
+                            font: normal 15px/1.2 'arial';
+                            color: #131c55;
+                            opacity: 0.8;
+                            margin: 0 0 30px 0;
+                        }
+                        .icons {
+                            text-align: center;
+                            transform: translateX(15px);
+                            a i{
+                                font-size: 30px;
+                                color: #131c55;
+                                letter-spacing: 30px;
+                            }
+                        }
+                    }
+                    &:hover {
+                        img {
+                            opacity: 0.3;
+                        }
+                        .txtBox {
+                            opacity: 1;
+                        }
+                    }
+                }
+                * {
+                    box-sizing: border-box;
+                    transition: all 0.4s ease-in;
+                    }
+            }
+        }
 
         .div_tree {
             position: absolute;

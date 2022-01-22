@@ -6,7 +6,7 @@ url : 'https://www.googleapis.com/youtube/v3/playlistItems'
 호출시 옵션값
 part: 'snippet',
 key:  'AIzaSyAMeYaiQ_kCtY_ZWYUq46p2gSQZowgTuSA',
-playlistId: 'PLKRZTF1Q1uwaYnfiljaWGD05ByfknsfE5',
+playlistId: 'PLjl-u2y72YNyCzhFSB91DD0oVvlE8mVYq',
 PLx62HH_9oB7hsMTmndaVmZPWoZNWoJBPb,
 maxResult: 5
 */
@@ -14,7 +14,7 @@ maxResult: 5
 
 const vidList = document.querySelector('.vidList');
 const key = 'AIzaSyAMeYaiQ_kCtY_ZWYUq46p2gSQZowgTuSA';
-const playlistId = 'PLx62HH_9oB7hsMTmndaVmZPWoZNWoJBPb';
+const playlistId = 'PLjl-u2y72YNyCzhFSB91DD0oVvlE8mVYq';
 const num = 5;
 const url = `https://www.googleapis.com/youtube/v3/playlistItems?part=snippet&key=${key}&playlistId=${playlistId}&maxResult=${num}`; ﻿
 

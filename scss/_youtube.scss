@@ -1,3 +1,31 @@
+#header {
+	.inner {
+		border: none;
+    }
+}
+.youtube {
+    .sub {
+        width: 100%;
+        height: 300px;
+        background-color: #000;
+        position: relative;
+        .sub_visual {
+            height: 300px;
+            background: url(../img/youtube.jpeg) no-repeat center/cover;
+            opacity: 0.5;
+        }
+        .sub_inner {
+            .sub_h2 {
+                top: -250px;
+                left: 10%;
+                position: relative;
+                font: bold 80px/1 'arial';
+                color: #fff;
+                opacity: 1;
+            }
+        }
+    }
+
 .vidList {
     width: 100%;
     display: flex;
@@ -43,7 +71,7 @@
         }
     }
 }
-
+}
 figure.pop {
     width: 100%;
     height: 100vh;

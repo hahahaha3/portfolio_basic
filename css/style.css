@@ -1071,27 +1071,81 @@ table {
   width: 100%;
   height: 300px;
   background-color: #000;
-}
-.about .sub .sub_h2 {
-  display: inline-block;
   position: relative;
-  margin-bottom: 20px;
-}
-.about .sub .sub_h2 .sub_inner {
-  font: bold 100px/1 "arial";
-  color: #fff;
-  transition: opacity 0.2s 0.5s;
-  transform: translate(120px, -280px);
 }
 .about .sub .sub_visual {
   height: 300px;
   background: url(../img/ttt.jpeg) no-repeat center/cover;
   opacity: 0.5;
 }
+.about .sub .sub_inner .sub_h2 {
+  top: -250px;
+  left: 10%;
+  position: relative;
+  font: bold 80px/1 "arial";
+  color: #fff;
+  opacity: 1;
+}
 .about .division {
   width: 100%;
-  height: 600px;
-  background: url(../img/bgDIvision.jpeg) no-repeat center/contain;
+  height: 800px;
+}
+.about .division .profile .wrap article {
+  position: relative;
+  margin: 30px 20px 20px 0;
+  width: 280px;
+  float: left;
+}
+.about .division .profile .wrap article:nth-of-type(4n) {
+  margin-right: 0;
+}
+.about .division .profile .wrap article img {
+  position: relative;
+  max-width: 100%;
+  vertical-align: top;
+}
+.about .division .profile .wrap article .txtBox {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  opacity: 0;
+  padding: 20px 30px;
+  margin-top: 50%;
+}
+.about .division .profile .wrap article .txtBox h2 {
+  width: 100%;
+  font: bold 30px/1 "arial";
+  margin-bottom: 20px;
+  color: #131c55;
+  text-transform: uppercase;
+}
+.about .division .profile .wrap article .txtBox p {
+  font: normal 15px/1.2 "arial";
+  color: #131c55;
+  opacity: 0.8;
+  margin: 0 0 30px 0;
+}
+.about .division .profile .wrap article .txtBox .icons {
+  text-align: center;
+  transform: translateX(15px);
+}
+.about .division .profile .wrap article .txtBox .icons a i {
+  font-size: 30px;
+  color: #131c55;
+  letter-spacing: 30px;
+}
+.about .division .profile .wrap article:hover img {
+  opacity: 0.3;
+}
+.about .division .profile .wrap article:hover .txtBox {
+  opacity: 1;
+}
+.about .division .profile .wrap * {
+  box-sizing: border-box;
+  transition: all 0.4s ease-in;
 }
 .about .division .div_tree {
   position: absolute;
@@ -1704,45 +1758,68 @@ aside .close {
     width: 100%;
   }
 }
-.vidList {
+#header .inner {
+  border: none;
+}
+
+.youtube .sub {
+  width: 100%;
+  height: 300px;
+  background-color: #000;
+  position: relative;
+}
+.youtube .sub .sub_visual {
+  height: 300px;
+  background: url(../img/youtube.jpeg) no-repeat center/cover;
+  opacity: 0.5;
+}
+.youtube .sub .sub_inner .sub_h2 {
+  top: -250px;
+  left: 10%;
+  position: relative;
+  font: bold 80px/1 "arial";
+  color: #fff;
+  opacity: 1;
+}
+.youtube .vidList {
   width: 100%;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   align-content: flex-start;
 }
-.vidList article {
+.youtube .vidList article {
   width: 48%;
   height: 400px;
   border: 1px solid #555;
   margin-bottom: 40px;
 }
-.vidList article .pic {
+.youtube .vidList article .pic {
   display: block;
   width: 100%;
   height: 60%;
 }
-.vidList article .pic > img {
+.youtube .vidList article .pic > img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
-.vidList article .con {
+.youtube .vidList article .con {
   width: 100%;
   height: 40%;
   padding: 20px;
 }
-.vidList article .con h2 {
+.youtube .vidList article .con h2 {
   font: bold 20px/1.2 "arial";
   color: #444;
   margin-bottom: 15px;
 }
-.vidList article .con p {
+.youtube .vidList article .con p {
   font: 15px/1.4 "arial";
   color: #666;
   margin-bottom: 20px;
 }
-.vidList article .con span {
+.youtube .vidList article .con span {
   font: bold 14px/1 "arial";
   color: orangered;
 }
