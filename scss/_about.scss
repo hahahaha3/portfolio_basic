@@ -11,12 +11,15 @@
         background-color: #000;
         position: relative;
         .sub_visual {
+            width: 100%;
             height: 300px;
             background: url(../img/ttt.jpeg) no-repeat center/cover;
             opacity: 0.5;
         }
         .sub_inner {
+            width: 1180px;
             .sub_h2 {
+                width: 100%;
                 top: -250px;
                 left: 10%;
                 position: relative;
