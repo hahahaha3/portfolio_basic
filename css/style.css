@@ -234,32 +234,32 @@
   height: 600px;
   position: relative;
 }
-#visual .inner .wrap .swiper .sub_article1 {
+#visual .inner .wrap .swiper .swiper-wrapper .sub_article1 {
   width: 100%;
   float: left;
 }
-#visual .inner .wrap .swiper .sub_article1 h2 {
+#visual .inner .wrap .swiper .swiper-wrapper .sub_article1 h2 {
   width: 90%;
   font: bold 15px/1.2 "arial";
 }
-#visual .inner .wrap .swiper .sub_article1 h2 a {
+#visual .inner .wrap .swiper .swiper-wrapper .sub_article1 h2 a {
   position: relative;
   left: 10px;
   color: #fff;
 }
-#visual .inner .wrap .swiper .sub_article1 img {
+#visual .inner .wrap .swiper .swiper-wrapper .sub_article1 img {
   width: 90%;
   margin-top: 15px;
   object-fit: contain;
 }
-#visual .inner .wrap .swiper .sub_article1 p {
+#visual .inner .wrap .swiper .swiper-wrapper .sub_article1 p {
   width: 90%;
   margin-top: 15px;
   margin-bottom: 40px;
   font: normal 10px/1.2 "arial";
   color: #cac9c9;
 }
-#visual .inner .wrap .swiper .sub_article1::after {
+#visual .inner .wrap .swiper .swiper-wrapper .sub_article1::after {
   content: " ";
   display: block;
   width: 4px;
@@ -269,28 +269,28 @@
   top: 0px;
   left: 0px;
 }
-#visual .inner .wrap .swiper .sub_article2 {
+#visual .inner .wrap .swiper .swiper-wrapper .sub_article2 {
   width: 380px;
   height: 50%;
   float: left;
 }
-#visual .inner .wrap .swiper .sub_article2 h2 {
+#visual .inner .wrap .swiper .swiper-wrapper .sub_article2 h2 {
   width: 90%;
   font: bold 15px/1.2 "arial";
 }
-#visual .inner .wrap .swiper .sub_article2 h2 a {
+#visual .inner .wrap .swiper .swiper-wrapper .sub_article2 h2 a {
   position: relative;
   color: #fff;
   left: 10px;
 }
-#visual .inner .wrap .swiper .sub_article2 p {
+#visual .inner .wrap .swiper .swiper-wrapper .sub_article2 p {
   width: 90%;
   margin-top: 15px;
   font: normal 10px/1.2 "arial";
   color: #cac9c9;
   margin-bottom: 100px;
 }
-#visual .inner .wrap .swiper .sub_article2::after {
+#visual .inner .wrap .swiper .swiper-wrapper .sub_article2::after {
   content: " ";
   display: block;
   width: 4px;
@@ -299,6 +299,17 @@
   position: absolute;
   top: 354px;
   left: 0px;
+}
+#visual .inner .wrap .swiper .swiper-pagination .swiper-pagination-bullet {
+  width: 10px;
+  height: 10px;
+  background: #000;
+}
+#visual .inner .wrap .swiper .swiper-pagination .swiper-pagination-bullet-active {
+  width: 30px;
+  background: orangered;
+  transition: width 0.5s;
+  border-radius: 5px;
 }
 
 /*brand -----------------------------------------*/
