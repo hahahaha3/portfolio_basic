@@ -1079,10 +1079,7 @@ table {
   background: url(../img/ttt.jpeg) no-repeat center/cover;
   opacity: 0.5;
 }
-.about .sub .sub_inner {
-  width: 1180px;
-}
-.about .sub .sub_inner .sub_h2 {
+.about .sub .sub_h2 {
   width: 100%;
   top: -250px;
   left: 10%;
@@ -1240,24 +1237,42 @@ table {
     opacity: 1;
   }
 }
-.community .sub_visual {
-  background: url(../img/brand3.jpg) no-repeat center/cover;
+.community .sub {
+  width: 100%;
+  height: 300px;
+  background-color: #000;
+  position: relative;
+}
+.community .sub .sub_visual {
+  width: 100%;
+  height: 300px;
+  background: url(../img/comm.jpeg) no-repeat center/cover;
+  opacity: 0.5;
+}
+.community .sub .sub_h2 {
+  width: 100%;
+  top: -250px;
+  left: 10%;
+  position: relative;
+  font: bold 80px/1 "arial";
+  color: #fff;
 }
 .community .inner table {
   width: 100%;
   border-bottom: 2px solid #111;
   border-collapse: collapse;
+  margin-top: 100px;
   margin-bottom: 50px;
 }
 .community .inner table tr:nth-of-type(even) {
-  background: #eee;
+  background: #fff;
 }
 .community .inner table tr:hover {
-  background: #e49e9e;
+  background: #131c5541;
 }
 .community .inner table tr th {
   padding: 15px;
-  background: #444;
+  background: #131c55;
   color: #fff;
 }
 .community .inner table tr th:nth-of-type(1) {
@@ -1300,9 +1315,9 @@ table {
   width: 30px;
   height: 30px;
   font-size: 20px;
-  color: #eee;
+  color: #fff;
   text-align: center;
-  background: #555;
+  background: #131c55;
   padding: 4px;
 }
 .community .inner .pagination .next {
@@ -1311,9 +1326,9 @@ table {
   width: 30px;
   height: 30px;
   font-size: 20px;
-  color: #eee;
+  color: #fff;
   text-align: center;
-  background: #555;
+  background: #131c55;
   padding: 4px;
 }
 .community .inner .pagination .numbers {
@@ -1322,17 +1337,17 @@ table {
   font-size: 0;
 }
 .community .inner .pagination .numbers a {
-  border: 1px solid #888;
+  border: 1px solid #131c55;
   display: inline-block;
   width: 30px;
   height: 30px;
   font: 11px/30px "arial";
-  color: #666;
+  color: #131c55;
   margin: 0 5px;
   transition: 0.5s;
 }
 .community .inner .pagination .numbers a:hover {
-  background: #666;
+  background: #131c55;
   color: #fff;
 }
 
@@ -1396,7 +1411,29 @@ table {
     display: none;
   }
 }
+.gallery .sub {
+  width: 100%;
+  height: 300px;
+  background-color: #000;
+  position: relative;
+}
+.gallery .sub .sub_visual {
+  width: 100%;
+  height: 300px;
+  background: url(../img/gall.jpeg) no-repeat center/cover;
+  opacity: 0.5;
+}
+.gallery .sub .sub_h2 {
+  width: 100%;
+  top: -250px;
+  left: 10%;
+  position: relative;
+  font: bold 80px/1 "arial";
+  color: #fff;
+}
+
 #gallery #searchBox {
+  margin-top: 100px;
   width: 100%;
   padding: 0px 60px 0px;
   font-size: 0;
@@ -1405,13 +1442,13 @@ table {
   width: 300px;
   height: 30px;
   background: #fff;
-  border: 1px solid #ddd;
+  border: 1px solid #131c55;
   padding-left: 10px;
 }
 #gallery #searchBox .btnSearch {
   width: 80px;
   height: 30px;
-  background: #333;
+  background: #131c55;
   color: #fff;
   font: bold 12px/30px "arial";
   text-align: center;
@@ -1484,7 +1521,7 @@ table {
 }
 #gallery #wrap #list li div span strong {
   font: 11px/1 "arial";
-  color: orangered;
+  color: #131c55;
 }
 #gallery #wrap #list li div:hover a > img {
   filter: grayscale(0%);
@@ -1517,6 +1554,7 @@ aside .close {
   right: 20px;
   color: #fff;
   cursor: pointer;
+  font: bold 20px/1 "arial";
 }
 
 @media screen and (max-width: 999px) {
@@ -1679,7 +1717,28 @@ aside .close {
 .location {
   width: 100%;
 }
+.location .sub {
+  width: 100%;
+  height: 300px;
+  background-color: #000;
+  position: relative;
+}
+.location .sub .sub_visual {
+  width: 100%;
+  height: 300px;
+  background: url(../img/locat.jpeg) no-repeat center/cover;
+  opacity: 0.5;
+}
+.location .sub .sub_h2 {
+  width: 100%;
+  top: -250px;
+  left: 10%;
+  position: relative;
+  font: bold 80px/1 "arial";
+  color: #fff;
+}
 .location #map {
+  margin-top: 100px;
   width: 100%;
   height: 500px;
   border: 1px solid #000;
@@ -1702,11 +1761,11 @@ aside .close {
   display: block;
   width: 200px;
   height: 40px;
-  background: #555;
+  background: #131c55;
   font: bold 12px/40px "맑은 고딕";
   color: #fff;
   text-align: center;
-  border: 1px solid #555;
+  border: 1px solid #131c55;
 }
 .location .traffic li.on a {
   background: #fff;
@@ -1723,11 +1782,11 @@ aside .close {
   display: block;
   width: 200px;
   height: 40px;
-  background: #555;
+  background: #131c55;
   font: bold 12px/40px "맑은 고딕";
   color: #fff;
   text-align: center;
-  border: 1px solid #555;
+  border: 1px solid #131c55;
 }
 .location .branch li.on a {
   background: #fff;
@@ -1779,17 +1838,13 @@ aside .close {
   background: url(../img/youtube.jpeg) no-repeat center/cover;
   opacity: 0.5;
 }
-.youtube .sub .sub_inner {
-  width: 1180px;
-}
-.youtube .sub .sub_inner .sub_h2 {
+.youtube .sub .sub_h2 {
   width: 100%;
   top: -250px;
   left: 10%;
   position: relative;
   font: bold 80px/1 "arial";
   color: #fff;
-  opacity: 1;
 }
 .youtube .vidList {
   width: 100%;

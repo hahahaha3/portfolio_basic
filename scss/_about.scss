@@ -16,18 +16,14 @@
             background: url(../img/ttt.jpeg) no-repeat center/cover;
             opacity: 0.5;
         }
-        .sub_inner {
-            width: 1180px;
-            .sub_h2 {
-                width: 100%;
-                top: -250px;
-                left: 10%;
-                position: relative;
-                font: bold 80px/1 'arial';
-                color: #fff;
-                opacity: 1;
-        }
-
+        .sub_h2 {
+            width: 100%;
+            top: -250px;
+            left: 10%;
+            position: relative;
+            font: bold 80px/1 'arial';
+            color: #fff;
+            opacity: 1;
         }
     }
     .division {

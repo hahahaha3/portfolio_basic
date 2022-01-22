@@ -39,24 +39,24 @@ var markerOptions = [
     {
         title: '본점',
         latlng: new kakao.maps.LatLng(37.50896573660853, 127.06181652131768),
-        imgSrc: 'img/marker1.png',
-        imageSize: new kakao.maps.Size(232, 99),
+        imgSrc: 'img/llo.png',
+        imageSize: new kakao.maps.Size(90, 90),
         imgPos: {offset: new kakao.maps.Point(116, 99)},
         button: branch_btns[0]
     },
     {
         title: '지점1',
         latlng: new kakao.maps.LatLng(33.518268193162946, 126.52308548747929),
-        imgSrc: 'img/marker2.png',
-        imageSize: new kakao.maps.Size(232, 99),
+        imgSrc: 'img/llo.png',
+        imageSize: new kakao.maps.Size(90, 90),
         imgPos: {offset: new kakao.maps.Point(116, 99)},
         button: branch_btns[1]
     },
     {
         title: '지점2',
         latlng: new kakao.maps.LatLng(33.23249725539617, 126.3654200043578),
-        imgSrc: 'img/marker3.png',
-        imageSize: new kakao.maps.Size(232, 99),
+        imgSrc: 'img/llo.png',
+        imageSize: new kakao.maps.Size(90, 90),
         imgPos: {offset: new kakao.maps.Point(116, 99)},
         button: branch_btns[2]
     }
