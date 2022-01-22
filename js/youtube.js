@@ -26,15 +26,15 @@ fetch(url)
         date = date.split('T')[0];
 
         result += `
-            <article>
+            <article class="article">
                 <a href="${item.snippet.resourceId.videoId}" class="pic">
                     <img src="${item.snippet.thumbnails.medium.url}" alt="">
+                    <div class="con">
+                        <h2>${title}</h2>
+                        <p>${con}</p>
+                        <span>${date}</span>
+                    </div>
                 </a>
-                <div class="con">
-                    <h2>${title}</h2>
-                    <p>${con}</p>
-                    <span>${date}</span>
-                </div>
             </article>
         `;
     });
@@ -50,7 +50,7 @@ vidList.addEventListener('click', e => {
     let pop = document.createElement('figure');
     pop.classList.add('pop');
     pop.innerHTML = `
-            <iframe src="https://www.youtube.com/embed/${vidId}" frameborder="0" width="100%" height="100%" allowfullscreen></iframe>
+            <iframe src="https://www.youtube.com/embed/${vidId}" frameborder="0" width="70%" height="70%" allowfullscreen></iframe>
             <span class="btnClose">Close</span>
     `;
     vidList.append(pop);
