@@ -1806,15 +1806,15 @@ aside .close {
   display: block;
   width: 200px;
   height: 40px;
-  background: #131c55;
+  background: #fff;
   font: bold 12px/40px "맑은 고딕";
-  color: #fff;
+  color: #131c55;
   text-align: center;
   border: 1px solid #131c55;
 }
 .location .traffic li.on a {
-  background: #fff;
-  color: #333;
+  background: #131c55;
+  color: #fff;
 }
 .location .branch {
   float: right;
@@ -1827,15 +1827,15 @@ aside .close {
   display: block;
   width: 200px;
   height: 40px;
-  background: #131c55;
+  background: #fff;
   font: bold 12px/40px "맑은 고딕";
-  color: #fff;
+  color: #131c55;
   text-align: center;
   border: 1px solid #131c55;
 }
 .location .branch li.on a {
-  background: #fff;
-  color: #333;
+  background: #131c55;
+  color: #fff;
 }
 
 @media screen and (max-width: 1179px) {
