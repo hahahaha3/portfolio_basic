@@ -1,0 +1,58 @@
+{
+    "data": [
+        {
+            "name": "AVA",
+            "position": "CEO",
+            "pic": "img/member/ava.jpeg",
+            "comment": "I don't need to compromise my principles, because they don't have the slightest bearing on what happens to me anyway."
+        }, 
+        {
+            "name": "JAMES",
+            "position": "CTO",
+            "pic": "img/member/james.jpeg",
+            "comment": "I don't need to compromise my principles, because they don't have the slightest bearing on what happens to me anyway."
+        }, 
+        {
+            "name": "EMMA",
+            "position": "DEVELOPER",
+            "pic": "img/member/emma.jpeg",
+            "comment": "I don't need to compromise my principles, because they don't have the slightest bearing on what happens to me anyway."
+        }, 
+        {
+            "name": "LUCAS",
+            "position": "DEVELOPER",
+            "pic": "img/member/lucas.jpeg",
+            "comment": "I don't need to compromise my principles, because they don't have the slightest bearing on what happens to me anyway."
+        }, 
+        {
+            "name": "ALICE",
+            "position": "DEVELOPER",
+            "pic": "img/member/alice.jpeg",
+            "comment": "I don't need to compromise my principles, because they don't have the slightest bearing on what happens to me anyway."
+        },
+        {
+            "name": "ALEX",
+            "position": "DEVELOPER",
+            "pic": "img/member/alex.jpeg",
+            "comment": "I don't need to compromise my principles, because they don't have the slightest bearing on what happens to me anyway."
+        },
+        {
+            "name": "MIA",
+            "position": "DESIGNER",
+            "pic": "img/member/mia.jpeg",
+            "comment": "I don't need to compromise my principles, because they don't have the slightest bearing on what happens to me anyway."
+        }, 
+        {
+            "name": "NOAH",
+            "position": "DESIGNER",
+            "pic": "img/member/noah.jpeg",
+            "comment": "I don't need to compromise my principles, because they don't have the slightest bearing on what happens to me anyway."
+        },
+        {
+            "name": "SOPHIA",
+            "position": "DESIGNER",
+            "pic": "img/member/sophia.jpeg",
+            "comment": "I don't need to compromise my principles, because they don't have the slightest bearing on what happens to me anyway."
+        }
+    ]
+}

@@ -7,8 +7,6 @@
 		height: 120px;
 		margin: 0 auto;
 		position: relative;
-		border-bottom: 3px solid rgba(255, 255, 255, 0.2);
-
 		> h1 {
 			position: absolute;
 			left: 0;
@@ -351,8 +349,6 @@
 		position: relative;
 
 		.wrap {
-			width: 100%;
-
 			article {
 				width: calc(1180px / 3);
 				height: 450px;
