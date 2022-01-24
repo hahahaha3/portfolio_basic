@@ -4,7 +4,7 @@
 // }
 
 // 변수 설정
-const  btnCall = document.querySelector(".btnCall");
+const btnCall = document.querySelector(".btnCall");
 const menuMo = document.querySelector(".menuMo");
 
 // 이벤트 바인딩(이벤트연결)
