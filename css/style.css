@@ -1762,6 +1762,7 @@ table {
 .about .inner .division .welcome:hover .main_article .main_txt {
   opacity: 1;
   transition: ease-in-out 1s;
+  box-shadow: 0px 0px 10px #131c55f6;
 }
 .about .inner .division .welcome .main_article {
   position: relative;
@@ -1779,7 +1780,6 @@ table {
   left: 400px;
   background: #fff;
   color: #131c55;
-  border: 1px solid #131c55;
   padding: 10px;
 }
 .about .inner .division .welcome .main_article .main_txt > h1 {
@@ -1829,11 +1829,12 @@ table {
   text-align: center;
   filter: grayscale(100%);
   margin-right: 20px;
+  margin-bottom: 20px;
 }
 .about .inner .division .profile .member_article:hover {
   filter: grayscale(0%);
-  transition: ease-in-out 0.5s;
-  box-shadow: 0px 0px 10px #000;
+  transition: ease-in-out 0.9s;
+  box-shadow: 0px 0px 10px #131c55;
 }
 .about .inner .division .profile .member_article:hover .line {
   opacity: 1;
@@ -1855,32 +1856,32 @@ table {
   position: absolute;
   background: #131c55;
   display: inline-block;
-  transition: all 0.5s;
+  transition: all 0.9s;
   left: 0%;
   top: 0%;
   width: 0%;
-  height: 2px;
+  height: 1px;
 }
 .about .inner .division .profile .member_article .line::after {
   content: "";
   position: absolute;
   background: #131c55;
   display: inline-block;
-  transition: all 0.5s;
+  transition: all 0.9s;
   left: 0%;
   top: 100%;
   width: 0%;
-  height: 2px;
+  height: 1px;
 }
 .about .inner .division .profile .member_article .line span::before {
   content: "";
   position: absolute;
   background: #131c55;
   display: inline-block;
-  transition: all 0.5s;
+  transition: all 0.9s;
   left: 0%;
   top: 0%;
-  width: 2px;
+  width: 1px;
   height: 0%;
 }
 .about .inner .division .profile .member_article .line span::after {
@@ -1888,10 +1889,10 @@ table {
   position: absolute;
   background: #131c55;
   display: inline-block;
-  transition: all 0.5s;
+  transition: all 0.9s;
   left: 100%;
   top: 0%;
-  width: 2px;
+  width: 1px;
   height: 0%;
 }
 .about .inner .division .profile .member_article img {
