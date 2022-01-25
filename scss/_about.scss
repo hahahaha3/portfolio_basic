@@ -80,7 +80,7 @@
                 .member_article {
                     float: left;
                     width: 380px;
-                    height: 470px;
+                    height: 100%;
                     text-align: center;
                     filter: grayscale(100%);
                     margin-right: 20px;
@@ -156,7 +156,7 @@
 
                     .txtBox {
                         h2 {
-                            margin: 15px 0;
+                            margin: 10px 0;
                             font: bold 20px/1 'arial';
                             color: #131c55;
                         }
@@ -166,7 +166,7 @@
                             opacity: 0.9;
                         }
                         p {
-                            font: bold 10px/1 'arial';
+                            font: normal 10px/1 'arial';
                             margin: 5px 0 15px;
                             padding: 0 40px;
                             color: #000;
@@ -179,6 +179,7 @@
                             background: #131c55;
                             border-radius: 50%;
                             margin-right: 10px;
+                            margin-bottom: 20px;
                             justify-content: center;
                             align-items: center;
                             i {
