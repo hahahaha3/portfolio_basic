@@ -1817,12 +1817,12 @@ table {
   left: 0;
   font: 12px/1.2 "arial";
 }
-.about .inner .division .profile::after {
+.about .inner .division haha .profile::after {
   content: "";
   display: block;
   clear: both;
 }
-.about .inner .division .profile .member_article {
+.about .inner .division haha .profile .member_article {
   float: left;
   width: 380px;
   height: 470px;
@@ -1831,27 +1831,27 @@ table {
   margin-right: 20px;
   margin-bottom: 40px;
 }
-.about .inner .division .profile .member_article:hover {
+.about .inner .division haha .profile .member_article:hover {
   filter: grayscale(0%);
   transition: ease-in-out 0.9s;
   box-shadow: 0px 0px 5px rgba(19, 28, 85, 0.5);
 }
-.about .inner .division .profile .member_article:hover .line {
+.about .inner .division haha .profile .member_article:hover .line {
   opacity: 1;
 }
-.about .inner .division .profile .member_article:hover .line::before {
+.about .inner .division haha .profile .member_article:hover .line::before {
   width: 100%;
 }
-.about .inner .division .profile .member_article:hover .line::after {
+.about .inner .division haha .profile .member_article:hover .line::after {
   width: 100%;
 }
-.about .inner .division .profile .member_article:hover .line span::before {
+.about .inner .division haha .profile .member_article:hover .line span::before {
   height: 100%;
 }
-.about .inner .division .profile .member_article:hover .line span::after {
+.about .inner .division haha .profile .member_article:hover .line span::after {
   height: 100.2%;
 }
-.about .inner .division .profile .member_article .line::before {
+.about .inner .division haha .profile .member_article .line::before {
   content: "";
   position: absolute;
   background: #131c55;
@@ -1862,7 +1862,7 @@ table {
   width: 0%;
   height: 1px;
 }
-.about .inner .division .profile .member_article .line::after {
+.about .inner .division haha .profile .member_article .line::after {
   content: "";
   position: absolute;
   background: #131c55;
@@ -1873,7 +1873,7 @@ table {
   width: 0%;
   height: 1px;
 }
-.about .inner .division .profile .member_article .line span::before {
+.about .inner .division haha .profile .member_article .line span::before {
   content: "";
   position: absolute;
   background: #131c55;
@@ -1884,7 +1884,7 @@ table {
   width: 1px;
   height: 0%;
 }
-.about .inner .division .profile .member_article .line span::after {
+.about .inner .division haha .profile .member_article .line span::after {
   content: "";
   position: absolute;
   background: #131c55;
@@ -1895,33 +1895,33 @@ table {
   width: 1px;
   height: 0%;
 }
-.about .inner .division .profile .member_article img {
+.about .inner .division haha .profile .member_article img {
   cursor: pointer;
   width: 250px;
   height: 250px;
   padding: 10px;
   border-radius: 50%;
 }
-.about .inner .division .profile .member_article:nth-of-type(3n) {
+.about .inner .division haha .profile .member_article:nth-of-type(3n) {
   margin-right: 0;
 }
-.about .inner .division .profile .member_article .txtBox h2 {
+.about .inner .division haha .profile .member_article .txtBox h2 {
   margin: 15px 0;
   font: bold 20px/1 "arial";
   color: #131c55;
 }
-.about .inner .division .profile .member_article .txtBox span {
+.about .inner .division haha .profile .member_article .txtBox span {
   font: bold 12px/1 "arial";
   color: #000;
   opacity: 0.9;
 }
-.about .inner .division .profile .member_article .txtBox p {
+.about .inner .division haha .profile .member_article .txtBox p {
   margin: 5px 0 15px;
   padding: 0 40px;
   color: #000;
   opacity: 0.8;
 }
-.about .inner .division .profile .member_article .txtBox .icons a {
+.about .inner .division haha .profile .member_article .txtBox .icons a {
   display: inline-flex;
   width: 30px;
   height: 30px;
@@ -1931,7 +1931,7 @@ table {
   justify-content: center;
   align-items: center;
 }
-.about .inner .division .profile .member_article .txtBox .icons a i {
+.about .inner .division haha .profile .member_article .txtBox .icons a i {
   color: #fff;
   font-size: 17px;
 }
