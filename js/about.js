@@ -11,7 +11,6 @@ fetch('data/members.json')
             <article class="member_article">
                 <div class="line">
                     <img src="${member.pic}">
-                    <span>
                     <div class="txtBox">
                         <h2>${member.name}</h2>
                         <span>${member.position}</span>
@@ -22,7 +21,6 @@ fetch('data/members.json')
                             <a href="#"><i class="fas fas fa-envelope"></i></a>
                         </div>
                     </div>
-                    </span>
                 </div>
             </article>
         `;

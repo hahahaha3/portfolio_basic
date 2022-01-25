@@ -1829,12 +1829,12 @@ table {
   text-align: center;
   filter: grayscale(100%);
   margin-right: 20px;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
 }
 .about .inner .division .profile .member_article:hover {
   filter: grayscale(0%);
   transition: ease-in-out 0.9s;
-  box-shadow: 0px 0px 10px #131c55;
+  box-shadow: 0px 0px 5px rgba(19, 28, 85, 0.5);
 }
 .about .inner .division .profile .member_article:hover .line {
   opacity: 1;
@@ -1849,7 +1849,7 @@ table {
   height: 100%;
 }
 .about .inner .division .profile .member_article:hover .line span::after {
-  height: 100.5%;
+  height: 100.2%;
 }
 .about .inner .division .profile .member_article .line::before {
   content: "";
