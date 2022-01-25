@@ -1922,7 +1922,7 @@ table {
   color: #000;
   opacity: 0.8;
 }
-.about .inner .division .profile .member_article .txtBox a {
+.about .inner .division .profile .member_article .txtBox haha a {
   display: inline-flex;
   width: 30px;
   height: 30px;
@@ -1933,7 +1933,7 @@ table {
   justify-content: center;
   align-items: center;
 }
-.about .inner .division .profile .member_article .txtBox a i {
+.about .inner .division .profile .member_article .txtBox haha a i {
   color: #fff;
   font-size: 17px;
 }
