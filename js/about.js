@@ -15,11 +15,9 @@ fetch('data/members.json')
                         <h2>${member.name}</h2>
                         <span>${member.position}</span>
                         <p>${member.comment}</p>
-                        <div class="icons">
                             <a href="#"><i class="fab fa-facebook-f"></i></a>
                             <a href="#"><i class="fab fa-twitter"></i></a>
                             <a href="#"><i class="fas fas fa-envelope"></i></a>
-                        </div>
                     </div>
                 </div>
             </article>
