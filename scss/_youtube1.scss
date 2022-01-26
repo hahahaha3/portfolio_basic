@@ -9,122 +9,62 @@
         }
     }
 
-    #vidTop {
+    #vidMain {
+        width: 100%;
+        background: #eee;
         .inner {
             display: flex;
-            .vidTop_txt {
-                width: 580px;
-                text-align: center;
-                margin-top: 30px;
-                padding: 5px;
-                h2 {
-                    text-align: left;
-                    font: bold 18px/1 'arial';
-                    margin: 100px 0 30px;
-                }
-                h1 {
-                    text-align: left;
-                    font: bold 30px/1 'arial';
-                    margin-bottom: 0;
-                    
-                }
-                p {
-                    width: 530px;
-                    text-align: left;
-                    font: normal 13px/1.5 'arial';
-                    margin: 30px 0 100px;
-                    color: #888;
-                }
-                // img {
-                //     width: 200px;
-                //     height: 120px;
-                // }
-
-                #slider {
+            .txtList {
+                top: 0;
+                left: 0;
+                position: relative;
+                display: flex;
+                width: 280px;
+                height: 340px;
+                margin-top: 100px;
+                margin-right: 20px;
+                border: 1px solid #131c55;
+                >article {
                     position: relative;
-                    overflow: hidden;
-                    width: 93%;
-                    ul {
+                    top: 20%;
+                    text-align: center;
+                    padding: 10px;
+                    h2 {
+                        font: bold 24px/1 'arial';
+                        margin-bottom: 10px;
+                    }
+                    span {
+                        font: bold 18px/1 'arial';
+                    }
+                    p {
+                        font: 10px/1.3 'arial';
+                        margin: 20px 0 30px;
+                    }
+                    a {
                         position: relative;
-                        li{
-                            float:left; 
-                            font-size:40px; 
-                            color:#fff; 
-                            display:flex; 
-                            justify-content:center; 
-                            align-items:center; 
-                            img {
-                                width: 200px;
-                                height: 130px;
-                                margin-right: 10px;
-                            }
+                        left: 50%;
+                        transform: translateX(-50%);
+                        display: block;
+                        width: 150px;
+                        height: 30px;
+                        font: bold 13px/30px 'arial';
+                        border: 1px solid #000;
+                        color: #000;
+                        &:hover {
+                            background: #131c55;
+                            color: #fff;
                         }
                     }
                 }
-                .prev{
-                    position:relative;
-                    left: -280px;
-                    top: -80px;
-                    img {
-                        width: 30px;
-                    }
-                }
-                .next{
-                    position:relative;
-                    left: 230px; 
-                    top: -80px;
-                    img {
-                        width: 30px;
-                    }
-                }
-            }
-
-            .vidTop_main {
-                width: 580px;
-                margin: 100px 0 0 20px;
-                >img {
-                    width: 100%;
-                    
-                }
-                h5 {
-                    font: 12px/1 'arial';
-                    margin: 10px 0 15px;
-                    color: #777;
-                }
-                h3 {
-                    font: bold 16px/1 'arial';
-                }
-                p {
-                    font: 10px/1.5 'arial';
-                    margin: 15px 0;
-                    color: #888;
-                }
-                a {
-                    display: inline-flex;
-                    margin-right: 30px;
-                    color: #333;
-                }
-            }
-        }
-    }
-
-    #vidMain {
-        width: 100%;
-        background: #fff;
-        .inner {
-            display: flex;
-            margin-top: 50px;
-            h2 {
-                position: absolute;
-                font: 20px/1 'arial';
             }
             .vidList {
                 position: relative;
                 display: flex;
+                width: 880px;
                 flex-wrap: wrap;
                 justify-content: space-between;
                 align-content: flex-start;
-                margin-top: 50px;
+                margin-top: 100px;
         
                 article {
                     position: relative;
@@ -140,7 +80,7 @@
                         >img {
                             width: 100%;
                             height: 100%;
-                            margin-right: 0px;
+                            margin-right: 20px;
                             object-fit: cover contain;
                             transition: all 0.4s ease-in;
                         }
@@ -179,7 +119,7 @@
                             opacity: 1;
                         }
                     }
-                    &:nth-of-type(4n) {
+                    &:nth-of-type(3n) {
                         margin-right: 0;
                     }
                 }

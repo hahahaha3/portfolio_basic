@@ -2578,33 +2578,134 @@ aside .close {
 .youtube .sub .sub_visual {
   background: url(../img/youtube.jpeg) no-repeat center/cover;
 }
-.youtube .vidList {
+.youtube #vidTop .inner {
+  display: flex;
+}
+.youtube #vidTop .inner .vidTop_txt {
+  width: 580px;
+  text-align: center;
+  margin-top: 30px;
+  padding: 5px;
+}
+.youtube #vidTop .inner .vidTop_txt h2 {
+  text-align: left;
+  font: bold 18px/1 "arial";
+  margin: 100px 0 30px;
+}
+.youtube #vidTop .inner .vidTop_txt h1 {
+  text-align: left;
+  font: bold 30px/1 "arial";
+  margin-bottom: 0;
+}
+.youtube #vidTop .inner .vidTop_txt p {
+  width: 530px;
+  text-align: left;
+  font: normal 13px/1.5 "arial";
+  margin: 30px 0 100px;
+  color: #888;
+}
+.youtube #vidTop .inner .vidTop_txt #slider {
+  position: relative;
+  overflow: hidden;
+  width: 93%;
+}
+.youtube #vidTop .inner .vidTop_txt #slider ul {
+  position: relative;
+}
+.youtube #vidTop .inner .vidTop_txt #slider ul li {
+  float: left;
+  font-size: 40px;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.youtube #vidTop .inner .vidTop_txt #slider ul li img {
+  width: 200px;
+  height: 130px;
+  margin-right: 10px;
+}
+.youtube #vidTop .inner .vidTop_txt .prev {
+  position: relative;
+  left: -280px;
+  top: -80px;
+}
+.youtube #vidTop .inner .vidTop_txt .prev img {
+  width: 30px;
+}
+.youtube #vidTop .inner .vidTop_txt .next {
+  position: relative;
+  left: 230px;
+  top: -80px;
+}
+.youtube #vidTop .inner .vidTop_txt .next img {
+  width: 30px;
+}
+.youtube #vidTop .inner .vidTop_main {
+  width: 580px;
+  margin: 100px 0 0 20px;
+}
+.youtube #vidTop .inner .vidTop_main > img {
   width: 100%;
+}
+.youtube #vidTop .inner .vidTop_main h5 {
+  font: 12px/1 "arial";
+  margin: 10px 0 15px;
+  color: #777;
+}
+.youtube #vidTop .inner .vidTop_main h3 {
+  font: bold 16px/1 "arial";
+}
+.youtube #vidTop .inner .vidTop_main p {
+  font: 10px/1.5 "arial";
+  margin: 15px 0;
+  color: #888;
+}
+.youtube #vidTop .inner .vidTop_main a {
+  display: inline-flex;
+  margin-right: 30px;
+  color: #333;
+}
+.youtube #vidMain {
+  width: 100%;
+  background: #fff;
+}
+.youtube #vidMain .inner {
+  display: flex;
+  margin-top: 50px;
+}
+.youtube #vidMain .inner h2 {
+  position: absolute;
+  font: 20px/1 "arial";
+}
+.youtube #vidMain .inner .vidList {
+  position: relative;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   align-content: flex-start;
-  margin-top: 100px;
+  margin-top: 50px;
 }
-.youtube .vidList article {
+.youtube #vidMain .inner .vidList article {
   position: relative;
   width: 280px;
   height: 150px;
   margin-bottom: 40px;
 }
-.youtube .vidList article .pic {
+.youtube #vidMain .inner .vidList article .pic {
   position: relative;
   display: block;
   width: 100%;
   height: 100%;
 }
-.youtube .vidList article .pic > img {
+.youtube #vidMain .inner .vidList article .pic > img {
   width: 100%;
   height: 100%;
+  margin-right: 0px;
   object-fit: cover contain;
   transition: all 0.4s ease-in;
 }
-.youtube .vidList article .con {
+.youtube #vidMain .inner .vidList article .con {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -2614,27 +2715,34 @@ aside .close {
   left: 0;
   transition: all 0.4s ease-in;
 }
-.youtube .vidList article .con h2 {
+.youtube #vidMain .inner .vidList article .con h2 {
   font: bold 15px/1.2 "arial";
   color: #131c55;
   margin-bottom: 15px;
 }
-.youtube .vidList article .con p {
+.youtube #vidMain .inner .vidList article .con p {
   font: 10px/1.4 "arial";
   color: rgba(0, 0, 0, 0.6);
   margin-bottom: 20px;
 }
-.youtube .vidList article .con span {
+.youtube #vidMain .inner .vidList article .con span {
   float: right;
   font: normal 10px/1 "arial";
   color: orangered;
   opacity: 0.8;
 }
-.youtube .vidList article:hover img {
+.youtube #vidMain .inner .vidList article:hover img {
   opacity: 0.1;
 }
-.youtube .vidList article:hover .con {
+.youtube #vidMain .inner .vidList article:hover .con {
   opacity: 1;
+}
+.youtube #vidMain .inner .vidList article:nth-of-type(4n) {
+  margin-right: 0;
+}
+.youtube #vidSub {
+  width: 100%;
+  background: #fff;
 }
 
 figure.pop {

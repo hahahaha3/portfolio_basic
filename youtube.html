@@ -8,6 +8,7 @@
     <script src="https://kit.fontawesome.com/21974f618d.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/style.css">
     <script defer src="js/youtube.js"></script>
+    <script defer src="js/anime.js"></script>
 </head>
 <body>
 
@@ -90,21 +91,48 @@
             <div class="sub_visual"></div>
                 <h2 class="sub_h2">YOUTUBE</h2>
         </div>
-        <div class="inner">
-        <!-- 컨텐츠 들어가는 부분 -->
-            <div class="vidList">
-        <!-- <article>
-                    <a href="#" class="pic">
-                        <img src="썸네일" alt="">
+        <section id="vidTop">
+            <div class="inner">
+                <div class="vidTop_txt">
+                    <h2>Weekly Featured</h2>
+                    <h1>Hello, Summer Vacation!</h1>
+                    <p>At Airbus, we believe the future of aerospace is autonomous, connected and zero-emission. We collaborate with our innovation ecosystem and leverage our digitised operations to imagine future concepts that will bring this vision to reality.</p>
+
+                    <article id="slider">
+                        <ul>
+                            <li><img src="img/youtube1.jpeg" alt=""></li>
+                            <li><img src="img/youtube2.jpeg" alt=""></li>
+                            <li><img src="img/youtube3.jpeg" alt=""></li>
+                            <li><img src="img/youtube4.jpeg" alt=""></li>
+                        </ul>
+                    </article>
+
+                    <a class="prev">
+                        <img src="img/btnPrev.png" alt="prev">
                     </a>
-                    <div class="con">
-                        <h2>Title</h2>
-                        <p>description</p>
-                        <span>날짜</span>
-                    </div>
-                </article> -->
+                    <a class="next">
+                        <img src="img/btnNext.png" alt="next">
+                    </a>
+                    
+                </div>
+                <div class="vidTop_main">
+                    <img src="img/youtube3.jpg" alt="">
+                    <h5>Warren Munoz</h5>
+                    <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h3>
+                    <p>Our world is changing. And so are we. At Airbus, we want to be known not only for our exceptional products and services, but also for the positive impact we have on the world and its citizens. This starts by rethinking our approach to the way we do business to ensure we can step up and be a driving force for change.</p>
+                    <a href="#">VIEWS</a>
+                    <a href="#">LIKES</a>
+                </div>
             </div>
-        </div>
+        </section>
+
+        <section id="vidMain">
+            <div class="inner">
+                <h2>Recommended</h2>
+                <div class="vidList"></div>
+            </div>
+        </section>
+
     </section>
 
     <footer id="footer">

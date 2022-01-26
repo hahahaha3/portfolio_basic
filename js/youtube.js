@@ -1,7 +1,7 @@
 const vidList = document.querySelector('.vidList');
 const key = 'AIzaSyAMeYaiQ_kCtY_ZWYUq46p2gSQZowgTuSA';
 const playlistId = 'PLx62HH_9oB7gzkqn1mQQlLKcyMDYlWXPe';
-const num = 12;
+const num = 8;
 const url = `https://www.googleapis.com/youtube/v3/playlistItems?part=snippet&key=${key}&playlistId=${playlistId}&maxResults=${num}`;
 
 fetch(url)
@@ -66,3 +66,68 @@ vidList.addEventListener('click', e => {
         }
     }
 })
+
+
+const slider = document.querySelector('#slider');
+const ul = slider.querySelector('ul');
+const lis = ul.querySelectorAll('li');
+const prev = document.querySelector('.prev');
+const next = document.querySelector('.next');
+const speed = 1000;
+let len = lis.length;
+let enableClick = true;
+
+init();
+
+next.addEventListener('click', e => {
+    e.preventDefault();
+    if(enableClick) {
+        nextSlide();
+        enableClick = false;
+    }
+})
+
+prev.addEventListener('click', e => {
+    e.preventDefault();
+    if(enableClick) {
+        prevSlide();
+        enableClick = false;
+    }
+})
+
+
+function init() {
+    ul.style.left = '-50%';
+    ul.prepend(ul.lastElementChild);
+    ul.style.width = `${50 * len}%`;
+    lis.forEach(li => {
+        li.style.width = `${100 / len}%`;
+    })
+}
+
+
+function prevSlide() {
+    new Anim(ul, {
+        prop: 'left',
+        value: '0%',
+        duration: speed,
+        callback: () => {
+            ul.style.left = '-50%';
+            ul.prepend(ul.lastElementChild);
+            enableClick = true;
+        }
+    })
+}
+
+function nextSlide() {
+    new Anim(ul, {
+        prop: 'left',
+        value: '-100%',
+        duration: speed,
+        callback: () => {
+            ul.style.left = '-50%';
+            ul.append(ul.firstElementChild);
+            enableClick = true;
+        }
+    })
+}
