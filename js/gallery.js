@@ -25,7 +25,7 @@ const base = 'https://www.flickr.com/services/rest/?';
 const method1 = 'flickr.interestingness.getList';
 const method2 = 'flickr.photos.search';
 const key = 'afa267e57b8885c90d6e77c92d86a32f';
-const per_page = 10;
+const per_page = 8;
 const format = 'json';
 
 const url1 = `${base}method=${method1}&api_key=${key}&per_page=${per_page}&format=${format}&nojsoncallback=1`;
@@ -40,7 +40,7 @@ btnSearch.addEventListener('click', e => {
     if(tag != '') {
         callData(url);
     } else {
-        console.log('검색어를 입력하세요');
+        alert('검색어를 입력하세요');
 
         frame.innerHTML = '';
         frame.classList.remove('on');

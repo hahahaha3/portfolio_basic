@@ -4,6 +4,15 @@ const playlistId = 'PLx62HH_9oB7gzkqn1mQQlLKcyMDYlWXPe';
 const num = 8;
 const url = `https://www.googleapis.com/youtube/v3/playlistItems?part=snippet&key=${key}&playlistId=${playlistId}&maxResults=${num}`;
 
+const slider = document.querySelector('#slider');
+const ul = slider.querySelector('ul');
+const lis = ul.querySelectorAll('li');
+const prev = document.querySelector('.prev');
+const next = document.querySelector('.next');
+const speed = 1000;
+let len = lis.length;
+let enableClick = true;
+
 fetch(url)
 .then(data => {
     return data.json();
@@ -68,17 +77,7 @@ vidList.addEventListener('click', e => {
 })
 
 
-const slider = document.querySelector('#slider');
-const ul = slider.querySelector('ul');
-const lis = ul.querySelectorAll('li');
-const prev = document.querySelector('.prev');
-const next = document.querySelector('.next');
-const speed = 1000;
-let len = lis.length;
-let enableClick = true;
-
 init();
-
 next.addEventListener('click', e => {
     e.preventDefault();
     if(enableClick) {
@@ -95,7 +94,6 @@ prev.addEventListener('click', e => {
     }
 })
 
-
 function init() {
     ul.style.left = '-50%';
     ul.prepend(ul.lastElementChild);
@@ -104,7 +102,6 @@ function init() {
         li.style.width = `${100 / len}%`;
     })
 }
-
 
 function prevSlide() {
     new Anim(ul, {

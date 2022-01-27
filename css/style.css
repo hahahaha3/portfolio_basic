@@ -398,6 +398,7 @@
   margin-bottom: 40px;
 }
 #brand .inner .wrap article:nth-of-type(3) strong {
+  width: 180px;
   float: left;
   font: bold 110px/1 "arial";
   color: #fff;
@@ -2168,34 +2169,75 @@ table {
   background: url(../img/gall.jpeg) no-repeat center/cover;
 }
 
+#gallery .gallery_sub {
+  text-align: center;
+  margin: 50px 0;
+}
+#gallery .gallery_sub::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+#gallery .gallery_sub h2 {
+  font: 22px/1 "arial";
+  margin-bottom: 30px;
+}
+#gallery .gallery_sub .pic {
+  float: left;
+  margin-right: 20px;
+}
+#gallery .gallery_sub .pic img {
+  width: 380px;
+  height: 180px;
+}
+#gallery .gallery_sub .pic:last-of-type {
+  margin-right: 0px;
+}
+#gallery .gallery_sub .pic > h2 {
+  margin: 10px 0 50px;
+  font: 15px/1 "arial";
+}
+#gallery .gallery_sub p {
+  width: 500px;
+  margin: 0 auto;
+  font: 13px/1.3 "arial";
+}
+#gallery .gallery_sub > a {
+  display: block;
+  width: 100px;
+  height: 30px;
+  background: #131c55;
+  color: #fff;
+  font: 12px/30px "arial";
+  margin: 15px auto;
+}
 #gallery #searchBox {
-  margin-top: 100px;
+  text-align: center;
+  margin: 50px 0 20px;
   width: 100%;
-  padding: 0px 60px 0px;
   font-size: 0;
 }
 #gallery #searchBox input[type=text] {
-  width: 300px;
+  width: 500px;
   height: 30px;
   background: #fff;
-  border: 1px solid #131c55;
+  border: 1px solid #131c556e;
   padding-left: 10px;
 }
 #gallery #searchBox .btnSearch {
-  width: 80px;
+  width: 100px;
   height: 30px;
   background: #131c55;
   color: #fff;
   font: bold 12px/30px "arial";
   text-align: center;
   border: none;
-  margin-left: 10px;
+  margin-left: 20px;
   cursor: pointer;
   vertical-align: top;
 }
 #gallery #wrap {
   width: 100%;
-  padding: 50px;
 }
 #gallery #wrap .loading {
   width: 100px;
@@ -2224,15 +2266,18 @@ table {
   clear: both;
 }
 #gallery #wrap #list li {
-  width: 25%;
+  width: 270px;
   float: left;
-  padding: 10px;
+  margin-right: 20px;
+}
+#gallery #wrap #list li:nth-of-type(4n) {
+  margin-right: 0;
 }
 #gallery #wrap #list li div {
   width: 100%;
-  padding: 15px;
-  border-radius: 10px;
-  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.1);
+  border: 1px solid #131c5575;
+  margin: 10px;
+  padding: 5px;
 }
 #gallery #wrap #list li div a > img {
   width: 100%;
@@ -2240,7 +2285,7 @@ table {
 }
 #gallery #wrap #list li div p {
   font: 12px/1.2 "arial";
-  color: #777;
+  color: #555;
   margin-top: 10px;
   margin-bottom: 10px;
 }
@@ -2256,7 +2301,7 @@ table {
   margin-right: 8px;
 }
 #gallery #wrap #list li div span strong {
-  font: 11px/1 "arial";
+  font: 10px/1 "arial";
   color: #131c55;
 }
 #gallery #wrap #list li div:hover a > img {
@@ -2286,8 +2331,8 @@ aside .con > img {
 }
 aside .close {
   position: absolute;
-  top: 20px;
-  right: 20px;
+  top: 50px;
+  right: 50px;
   color: #fff;
   cursor: pointer;
   font: bold 20px/1 "arial";
@@ -2629,14 +2674,16 @@ aside .close {
   position: relative;
   left: -280px;
   top: -80px;
+  cursor: pointer;
 }
 .youtube #vidTop .inner .vidTop_txt .prev img {
   width: 30px;
 }
 .youtube #vidTop .inner .vidTop_txt .next {
   position: relative;
-  left: 230px;
+  left: 240px;
   top: -80px;
+  cursor: pointer;
 }
 .youtube #vidTop .inner .vidTop_txt .next img {
   width: 30px;
@@ -2672,11 +2719,11 @@ aside .close {
 }
 .youtube #vidMain .inner {
   display: flex;
-  margin-top: 50px;
+  margin-top: 70px;
 }
 .youtube #vidMain .inner h2 {
   position: absolute;
-  font: 20px/1 "arial";
+  font: 25px/1 "arial";
 }
 .youtube #vidMain .inner .vidList {
   position: relative;
@@ -2700,15 +2747,12 @@ aside .close {
 }
 .youtube #vidMain .inner .vidList article .pic > img {
   width: 100%;
-  height: 100%;
   margin-right: 0px;
   object-fit: cover contain;
   transition: all 0.4s ease-in;
 }
 .youtube #vidMain .inner .vidList article .con {
   position: absolute;
-  width: 100%;
-  height: 100%;
   padding: 20px;
   opacity: 0;
   top: 0;
@@ -2716,14 +2760,14 @@ aside .close {
   transition: all 0.4s ease-in;
 }
 .youtube #vidMain .inner .vidList article .con h2 {
-  font: bold 15px/1.2 "arial";
+  font: bold 13px/1.2 "arial";
   color: #131c55;
   margin-bottom: 15px;
 }
 .youtube #vidMain .inner .vidList article .con p {
   font: 10px/1.4 "arial";
   color: rgba(0, 0, 0, 0.6);
-  margin-bottom: 20px;
+  margin-top: 50px;
 }
 .youtube #vidMain .inner .vidList article .con span {
   float: right;
@@ -2739,10 +2783,6 @@ aside .close {
 }
 .youtube #vidMain .inner .vidList article:nth-of-type(4n) {
   margin-right: 0;
-}
-.youtube #vidSub {
-  width: 100%;
-  background: #fff;
 }
 
 figure.pop {
