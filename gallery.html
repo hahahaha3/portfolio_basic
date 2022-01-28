@@ -10,6 +10,11 @@
     <link rel="stylesheet" href="css/style.css">
     <script defer src="js/main.js"></script>
     <script defer src="js/gallery.js"></script>
+    <script>
+        window.addEventListener('load', () => {
+            new BtnCall();
+        })
+    </script>
 </head>
 <body>
 
@@ -91,7 +96,7 @@
     <section class="content gallery">
         <div class="sub">
             <div class="sub_visual"></div>
-                <h2 class="sub_h2">GALLERY</h2>
+                <div class="inner"><h2 class="sub_h2">GALLERY</h2></div>
         </div>
         <div class="inner">
             <!-- 컨텐츠 들어가는 부분 -->
