@@ -4,7 +4,6 @@ class Validation{
         this.btnSubmit = this.form.querySelector("input[type=submit"); 
         
         arr.forEach(opt =>{
-            //btnSubmit버튼을 클릭했을 때 
             this.btnSubmit.addEventListener("click", e=>{
                 
                 if(opt.type === "text"){
@@ -28,35 +27,20 @@ class Validation{
 
 isTxt(name, len){
     if(len === undefined ) len = 5; 
-
-    //해당 name값의 input요소를 찾음 
     let input = this.form.querySelector(`[name=${name}]`); 
-    //해당 input요소의 value값 구함 
     let txt = input.value; 
 
-    //입력받은 value값의 글자수가 len이상이라면 
     if(txt.length >= len){
-        //일단 에러메시지 p요소가 있는지 판별 
         const errMsgs = input.closest("td").querySelectorAll("p"); 
-        //p요소가 있다면 제거하고 
         if(errMsgs.length >0) input.closest("td").querySelector("p").remove(); 
-
-        //true값 반환하여 인증통과 
         return true; 
 
-    //입력받은 value값의 글자수가 len개이상이 아닐경우
     }else{
-        //일단 에러메시지 p요소가 있는지 판별 
         const errMsgs = input.closest("td").querySelectorAll("p"); 
-        //p요소가 있다면 제거하고 
         if(errMsgs.length >0) input.closest("td").querySelector("p").remove(); 
-
-        //p태그로 에러메시지 새로 생성하여 해당 input요소의 부모 td의 뒤쪽에 삽입
         const errMsg = document.createElement("p"); 
         errMsg.append(`입력항목을 ${len}글자 이상 입력하세요`); 
         input.closest("td").append(errMsg); 
-
-        //false값 반환하여 인증 막음 
         return false; 
     }
 }
@@ -88,7 +72,6 @@ isTxt(name, len){
   isCheck(name){
     let inputs = this.form.querySelectorAll(`[name=${name}]`); 
     let isCheck = false; 
-
     for(let el of inputs){
         if(el.checked) isCheck = true; 
     }
@@ -96,8 +79,7 @@ isTxt(name, len){
     if(isCheck){
         const errMsgs = inputs[0].closest("td").querySelectorAll("p"); 
         if(errMsgs.length > 0) inputs[0].closest("td").querySelector("p").remove(); 
-        return true; 
-
+        return true;
     }else{
         const errMsgs = inputs[0].closest("td").querySelectorAll("p"); 
         if(errMsgs.length >0) inputs[0].closest("td").querySelector("p").remove(); 

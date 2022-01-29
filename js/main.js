@@ -40,11 +40,9 @@ counter('.counter', 445, 4000);
 
 function counter(el, num, time) {
     const item = document.querySelector(el);
-
     let current_num = parseInt(item.innerText);
     let count_num = num - current_num;
     let interval = parseInt(time/count_num);
-    
     let timer = setInterval(function() {
         current_num++;
     
