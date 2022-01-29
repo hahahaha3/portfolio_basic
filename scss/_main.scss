@@ -27,7 +27,7 @@
 						width: 170px;
 						display: block;
 						padding: 14px 40px;
-						font: bold 14px/1 "arial";
+						font: bold 14px/1 "Roboto";
 						color: #fff;
 						text-align: center;
 					}
@@ -46,7 +46,7 @@
 						a {
 							height: 40px;
 							position: relative;
-							font: normal 10px/1.2 'arial';
+							font: normal 10px/1.2 'Roboto';
 							color: #131c55;
 							&:hover {
 								background: orangered;
@@ -76,7 +76,7 @@
 					float: left;
 					margin-left: 20px;
 					a {
-						font: 10px "arial";
+						font: 10px "Roboto";
 						color: #fff;
 					}
 				}
@@ -163,7 +163,7 @@
 				padding-bottom: 30px;
 				a {
 					display: block;
-					font: bold 24px/1 "arial";
+					font: bold 24px/1 "Roboto";
 					color: #fff;
 					text-align: center;
 				}
@@ -178,7 +178,7 @@
 						display: block;
 						width: 100%;
 						padding: 20px 0;
-						font: bold 14px/1 "arial";
+						font: bold 14px/1 "Roboto";
 						color: #888;
 						text-align: center;
 						border-bottom: 1px solid #444;
@@ -208,14 +208,14 @@
 					float: left;
 					margin-right: 20px;
 					h1 {
-						font: bold 270px/1 "arial";
+						font: bold 270px/1 "Roboto";
 						color: #fff;
 					}
 					a {
 						display: block;
 						width: 200px;
 						height: 30px;
-						font: bold 11px/30px "arial";
+						font: bold 11px/30px "Roboto";
 						color: #fff;
 						text-align: center;
 						border: 1px solid #fff;
@@ -243,7 +243,7 @@
 						float: left;
 						h2 {
 							width: 90%;
-							font: bold 15px/1.2 'arial';
+							font: bold 15px/1.2 'Roboto';
 							a {
 								position: relative;
 								left: 10px;
@@ -279,7 +279,7 @@
 						float: left;
 						h2 {
 							width: 90%;
-							font: bold 15px/1.2 'arial';
+							font: bold 15px/1.2 'Roboto';
 							a{
 								position: relative;
 								color: #fff;
@@ -341,12 +341,12 @@
 					float: left;
 					padding: 40px 40px 0px;
 					h2 {
-						font: bold 30px/1 'arial';
+						font: bold 30px/1 'Roboto';
 						color: #131c55;
 						margin-bottom: 40px;
 					}
 					span {
-						font: bold 18px/1 'arial';
+						font: bold 18px/1 'Roboto';
 						color: #131c55;
 					}
 					p {
@@ -373,7 +373,7 @@
 					text-align: center;
 					h2 {
 						text-align: left;
-						font: bold 30px/1 'arial';
+						font: bold 30px/1 'Roboto';
 						color: #fff;
 					}
 					img {
@@ -392,7 +392,7 @@
 					float: left;
 					padding: 40px 40px 0px;
 					h2 {
-						font: bold 30px/1 'arial';
+						font: bold 30px/1 'Roboto';
 						color: #fff;
 						margin-bottom: 10px;
 					}
@@ -404,14 +404,14 @@
 					strong {
 						width: 180px;
 						float: left;
-						font: bold 110px/1 'arial';
+						font: bold 110px/1 'Roboto';
 						color: #fff;
 						margin-right: 30px;
 						margin-bottom: 50px;
 					}
 					span {
 						float: left;
-						font: bold 16px/1.6 'arial';
+						font: bold 16px/1.6 'Roboto';
 						letter-spacing: 2px;
 						color: #fff;
 					}
@@ -420,7 +420,7 @@
 						display: block;
 						width: 150px;
 						text-align: center;
-						font: 18px/1 'arial';
+						font: 18px/1 'Roboto';
 						color: rgba(255,255,255,0.7);
 					}
 					&:hover {
@@ -509,7 +509,7 @@
 		position: relative;
 		padding: 0px 0px 50px;
 		h1 {
-			font: bold 30px/1 'arial';
+			font: bold 30px/1 'Roboto';
 			color: #131c55;
 			margin-bottom: 40px;
 			&::after {
@@ -527,11 +527,11 @@
 			article {
 				float: left;
 				h2 {
-					font: bold 30px/1.4 'arial';
+					font: bold 30px/1.4 'Roboto';
 					cursor: pointer;
 				}
 				h3 {
-					font: bold 20px/1.4 'arial';
+					font: bold 20px/1.4 'Roboto';
 					cursor: pointer;
 				}
 				.pic {
@@ -547,7 +547,7 @@
 						width: 150px;
 						height: 40px;
 						background: #131c55;
-						font: 15px/40px 'arial';
+						font: 15px/40px 'Roboto';
 						text-align: center;
 						color: #fff;
 						transform: translate(20px, -35px);
@@ -563,7 +563,7 @@
 					height: 700px;
 					margin-right: 20px;
 					p {
-						font: 14px/1.5 'Roboto';
+						font: 14px/1.5 'arial';
 						color: rgba(0,0,0,0.5);
 						margin-top: 30px;
 						padding-right: 40px;
@@ -616,7 +616,7 @@
 						float: right;
 						width: 220px;
 						height: 30px;
-						font: bold 12px/1 'arial';
+						font: bold 12px/1 'Roboto';
 						color: #131c55;
 						padding: 5px;
 						margin-top: 10px;
@@ -645,7 +645,7 @@
 					width: 380px;
 					transform: translate(0px, -150px);
 					h2 {
-						font: bold 60px/60px 'arial';
+						font: bold 60px/60px 'Roboto';
 						color: #131c55;
 					}
 					p {
@@ -659,7 +659,7 @@
 						height: 30px;
 						margin-top: 20px;
 						border: 1px solid #131c55;
-						font: bold 13px/2.2 'arial';
+						font: bold 13px/2.2 'Roboto';
 						text-align: center;
 						color: #131c55;
 						&:hover {
@@ -676,7 +676,7 @@
 						width: 40px;
 						height: 40px;
 						border: 1px solid #131c55;
-						font: bold 20px/1.3 'arial';
+						font: bold 20px/1.3 'Roboto';
 						text-align: center;
 						color: #131c55;
 						transform: translate(0, 10px);
@@ -747,7 +747,7 @@
 			opacity: 0.9;
 		}
 		p {
-			font: 10px/1 "Roboto";
+			font: 10px/1 "arial";
 			color: #131c55;
 			width: 100%;
 			float: left;
@@ -800,7 +800,7 @@
 					padding-bottom: 30px;
 					a {
 						display: block;
-						font: bold 24px/1 "arial";
+						font: bold 24px/1 "Roboto";
 						color: #fff;
 						text-align: center;
 					}
@@ -815,7 +815,7 @@
 							display: block;
 							width: 100%;
 							padding: 20px 0;
-							font: bold 14px/1 "arial";
+							font: bold 14px/1 "Roboto";
 							color: #888;
 							text-align: center;
 							border-bottom: 1px solid #444;
@@ -843,11 +843,11 @@
 						float: left;
 						margin-right: 0px;
 						h1 {
-							font: bold 180px/1 "arial";
+							font: bold 180px/1 "Roboto";
 						}
 						a {
 							width: 150px;
-							font: bold 10px/30px "arial";
+							font: bold 10px/30px "Roboto";
 							margin-left: 10px;
 							z-index: 3;
 						}
@@ -914,7 +914,7 @@
 							margin-bottom: 30px;
 						}
 						span {
-							font: bold 16px/1 'arial';
+							font: bold 16px/1 'Roboto';
 						}
 						p {
 							display: none;
@@ -962,7 +962,7 @@
 						strong {
 							width: 100%;
 							text-align: center;
-							font: bold 90px/1 'arial';
+							font: bold 90px/1 'Roboto';
 							margin-right: 0px;
 							margin-bottom: 40px;
 						}
@@ -1004,13 +1004,13 @@
 						}
 						h3 {
 							float: right;
-							font: normal 20px/1 'arial';
+							font: normal 20px/1 'Roboto';
 							letter-spacing: 1px;
 						}
 						ul li {
 							a {
 								height: 20px;
-								font: bold 15px/20px 'Oswald';
+								font: bold 15px/20px 'Roboto';
 							}
 						}
 					}
@@ -1037,7 +1037,7 @@
 					h2 {
 						width: 100%;
 						padding: 25px;
-						font: bold 30px/1.4 'arial';
+						font: bold 30px/1.4 'Roboto';
 					}
 					p {
 						font: normal 10px/1.2 'arial';
@@ -1126,7 +1126,7 @@
 				.main_article {
 						height: 100%;
 						h1 {
-							font: bold 30vw/1 "arial";
+							font: bold 30vw/1 "Roboto";
 							margin-bottom: 10px;
 						}
 						a {
@@ -1168,10 +1168,10 @@
 						padding: 10px;
 						h2 {
 							width: 100%;
-							font: bold 18px/1 'arial';
+							font: bold 18px/1 'Roboto';
 						}
 						span {
-							font: bold 13px/1 'arial';
+							font: bold 13px/1 'Roboto';
 						}
 						img {
 							margin-bottom: 50px;
@@ -1183,7 +1183,7 @@
 					&:nth-of-type(2) {
 						padding: 10px;
 						h2 {
-							font: bold 18px/1 'arial';
+							font: bold 18px/1 'Roboto';
 						}
 						&:hover {
 							transform: translateY(-50px);
@@ -1192,10 +1192,10 @@
 					&:nth-of-type(3) {
 						padding: 10px;
 						h2 {
-							font: bold 18px/1 'arial';
+							font: bold 18px/1 'Roboto';
 						}
 						strong {
-							font: bold 45px/1 'arial';
+							font: bold 45px/1 'Roboto';
 						}
 						&:hover {
 							transform: translateY(-50px);
@@ -1236,7 +1236,7 @@
 						height: 350px;
 					}
 					h2 {
-						font: bold 18px/1.4 'arial';
+						font: bold 18px/1.4 'Roboto';
 					}
 					h3 {
 						display: none;
@@ -1257,7 +1257,7 @@
 						display: none;
 					}
 					&:nth-of-type(3) {
-						font: bold 15px/1 'arial';
+						font: bold 15px/1 'Roboto';
 						text-align: center;
 						.btnView {
 							margin: 0px 20px;
