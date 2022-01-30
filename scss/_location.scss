@@ -9,7 +9,6 @@
             background: url(../img/locat.jpeg) no-repeat center/cover;
         }
     }
-
     #map {
         margin-top: 100px;
         width: 100%;
@@ -22,7 +21,6 @@
         display: block;
         clear: both;
     }
-
     .traffic {
         float: left;
         margin: 40px 20px 20px 0;
@@ -43,7 +41,6 @@
                 color: #fff;
             }
         }
-
     }
     .branch {
         float: right;
@@ -51,7 +48,6 @@
         li{
             float: left;
             margin-left: 10px;
-
             a{
                 display: block;
                 width: 160px;
@@ -69,7 +65,6 @@
         }
     }
 }
-
 @media screen and (max-width: $tablet) {
     .location {
         #map {
@@ -79,13 +74,12 @@
             width: 100%;
             li {
                 float: left;
-                width: calc(97% / 3);
+                width: calc(98% / 2);
                 margin-right: 1%;
                 a {
                     width: 100%;
                 }
             }
-    
         }
         .branch {
             float: left;
@@ -102,7 +96,13 @@
         }
     }
 }
-
 @media screen and (max-width: $mobile) {
-    
+    .location {
+        .traffic {
+            li {
+                width: calc(98% / 2);
+                margin-right: 1%;
+            }
+        }
+    }
 }
