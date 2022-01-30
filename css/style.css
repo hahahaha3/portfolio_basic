@@ -2015,7 +2015,7 @@ table {
   filter: grayscale(100%);
 }
 .gallery #gallery #wrap #list .item div p {
-  font: 12px/1.2 "arial";
+  font: 12px/1.2 "Roboto";
   color: #555;
   margin: 10px 0;
 }
@@ -2031,7 +2031,7 @@ table {
   margin: 0 10px 0 10px;
 }
 .gallery #gallery #wrap #list .item div span strong {
-  font: 10px/1 "arial";
+  font: 10px/1 "Roboto";
   color: #666;
 }
 .gallery #gallery #wrap #list .item div:hover a > img {
@@ -2039,7 +2039,7 @@ table {
 }
 .gallery #gallery #searchBox {
   text-align: center;
-  margin: 50px 0 50px;
+  margin-top: 50px;
   width: 100%;
   font-size: 0;
 }
@@ -2090,7 +2090,7 @@ aside .close {
   right: 50px;
   color: #fff;
   cursor: pointer;
-  font: bold 20px/1 "arial";
+  font: bold 20px/1 "Roboto";
 }
 
 @media screen and (max-width: 1179px) {

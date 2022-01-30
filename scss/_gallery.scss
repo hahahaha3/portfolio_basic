@@ -55,7 +55,7 @@
                             }
                         }
                         p {
-                            font: 12px/1.2 'arial';
+                            font: 12px/1.2 'Roboto';
                             color: #555;
                             margin: 10px 0;
                         }
@@ -70,7 +70,7 @@
                                 margin: 0 10px 0 10px;
                             }
                             strong {
-                                font: 10px/1 'arial';
+                                font: 10px/1 'Roboto';
                                 color: #666;
                             }
                         }
@@ -83,7 +83,7 @@
         }
         #searchBox {
             text-align: center;
-            margin: 50px 0 50px;
+            margin-top: 50px;
             width: 100%;
             font-size: 0;
 
@@ -135,7 +135,7 @@ aside {
         right: 50px;
         color: #fff;
         cursor: pointer;
-        font: bold 20px/1 'arial';
+        font: bold 20px/1 'Roboto';
     }
 }
 
