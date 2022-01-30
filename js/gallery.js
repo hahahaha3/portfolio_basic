@@ -145,9 +145,7 @@ function callData(url) {
 
 function createList(items) {
     let htmls = '';
-
     items.map(data => {
-        console.log(data);
         let imgSrc = `https://live.staticflickr.com/${data.server}/${data.id}_${data.secret}_m.jpg`;
     
         let imgSrcBig =`https://live.staticflickr.com/${data.server}/${data.id}_${data.secret}_b.jpg`;

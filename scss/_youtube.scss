@@ -19,19 +19,19 @@
                 padding: 5px;
                 h2 {
                     text-align: left;
-                    font: bold 18px/1 'arial';
+                    font: bold 18px/1 'Roboto';
                     margin: 100px 0 30px;
                 }
                 h1 {
                     text-align: left;
-                    font: bold 30px/1 'arial';
+                    font: bold 30px/1 'Roboto';
                     margin-bottom: 0;
                     
                 }
                 p {
                     width: 530px;
                     text-align: left;
-                    font: normal 13px/1.5 'arial';
+                    font: normal 13px/1.5 'Roboto';
                     margin: 30px 0 100px;
                     color: #888;
                 }
@@ -84,15 +84,15 @@
                     
                 }
                 h5 {
-                    font: 12px/1 'arial';
+                    font: 12px/1 'Roboto';
                     margin: 10px 0 15px;
                     color: #777;
                 }
                 h3 {
-                    font: bold 16px/1 'arial';
+                    font: bold 16px/1 'Roboto';
                 }
                 p {
-                    font: 10px/1.5 'arial';
+                    font: 10px/1.5 'Roboto';
                     margin: 15px 0;
                     color: #888;
                 }
@@ -113,7 +113,7 @@
             margin-top: 70px;
             h2 {
                 position: absolute;
-                font: 25px/1 'arial';
+                font: 25px/1 'Roboto';
             }
             .vidList {
                 position: relative;
@@ -149,18 +149,18 @@
                         left: 0;
                         transition: all 0.4s ease-in;
                         h2 {
-                            font: bold 13px/1.2 'arial'; 
+                            font: bold 13px/1.2 'Roboto'; 
                             color: #131c55;
                             margin-bottom: 15px;
                         }
                         p {
-                            font: 10px/1.4 'arial';
+                            font: 10px/1.4 'Roboto';
                             color: rgba(0, 0, 0, 0.6);
                             margin-top: 50px;
                         }
                         span {
                             float: right;
-                            font: normal 10px/1 'arial';
+                            font: normal 10px/1 'Roboto';
                             color: orangered;
                             opacity: 0.8;
                         }
@@ -182,8 +182,6 @@
     }
 }
 
-
-
 figure.pop {
     width: 100%;
     height: 100vh;
@@ -202,7 +200,80 @@ figure.pop {
         top: 30px;
         right: 30px;
         color: #fff;
-        font: bold 20px/1 'arial';
+        font: bold 20px/1 'Roboto';
         cursor: pointer;
+    }
+}
+
+@media screen and (max-width:$tablet) {
+    .youtube {
+        #vidTop {
+            .inner {
+                .vidTop_txt {
+                    width: 100%;
+                    margin-top: 0px;
+                    padding: 0px;
+                    h2 {
+                        font: bold 20px/1 'Roboto';
+                        margin: 50px 0 30px;
+                    }
+                    h1 {
+                        font: bold 25px/1 'Roboto';
+                    }
+                    p {
+                        width: 100%;
+                        font: normal 12px/1.5 'Roboto';
+                        margin: 30px 0 50px;
+                        color: #888;
+                    }
+                    #slider {
+                        display: none;
+                    }
+                    .prev{
+                        display: none;
+                    }
+                    .next{
+                        display: none;
+                    }
+                }
+                .vidTop_main {
+                    width: 100%;
+                }
+            }
+        }
+        #vidMain {
+            .inner {
+                h2 {
+                    font: 20px/1 'Roboto';
+                }
+                .vidList {
+                    article {
+                        position: relative;
+                        width: calc(95% / 2);
+                        height: 250px;
+                        margin: 20 0px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:$mobile) {
+    .youtube {
+        #vidMain {
+            .inner {
+                h2 {
+                    font: 20px/1 'Roboto';
+                }
+                .vidList {
+                    article {
+                        position: relative;
+                        width: 100%;
+                        height: 230px;
+                    }
+                }
+            }
+        }
     }
 }

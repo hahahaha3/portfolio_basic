@@ -12,7 +12,7 @@
     #gallery {
         #wrap { 
             width: 100%;
-
+            padding: 50px;
             .loading {
                 width: 100px;
                 position: fixed;
@@ -30,6 +30,7 @@
                 opacity: 0;
                 transform: translateY(100px);
                 transition: 1s;
+                text-align: center;
                 &.on{
                     opacity:1; transform:translateY(0px); 
                 }
@@ -39,14 +40,13 @@
                     clear: both;
                 }
                 .item {
-                    width: calc(100% / 4);
-                    float: left;
-                    margin: 0 0 100px 0;
-                    &:nth-of-type(4n) {
-                        margin-right: 0;
-                    }
+                    float:left; 
+                    width:calc(98% / 4); 
+                    border: 1px solid #d8d8d8;
+                    margin: 0 5px 50px 0;
                     div {
-                        width: 100%;
+                        width:100%; 
+                        height: 300px;
                         a {
                             >img {
                                 width: 100%;
@@ -67,7 +67,7 @@
                                 width: 40px;
                                 height: 40px;
                                 border-radius: 50%;
-                                margin-right: 10px;
+                                margin: 0 10px 0 10px;
                             }
                             strong {
                                 font: 10px/1 'arial';
@@ -108,39 +108,7 @@
             }
         }
     }
-    .gallery_sub {
-        text-align: center;
-        background: #131c55;
-        width: 100%;
-        color: #fff;
-        padding: 50px;
-        h2 {
-            font: bold 30px/1 'Roboto';
-        }
-        input[type=text] {
-            display: inline-flex;
-            width: 300px;
-            height: 30px;
-            padding-left: 20px;
-            margin: 50px 20px;
-        }
-        a {
-            display: block;
-            width: 150px;
-            height: 30px;
-            font: 15px/30px 'Roboto';
-            background: #131c55;
-            color: #fff;
-            border: 1px solid #fff;
-            margin: 0 auto;
-            &:hover {
-            background: #fff;
-            color: #131c55;
-            }
-        }
-    }
 }
-
 aside {
     width: 100%;
     height: 100vh;
@@ -170,20 +138,88 @@ aside {
         font: bold 20px/1 'arial';
     }
 }
-@media screen and (max-width:999px){
-    #gallery #wrap #list li { 
-        width:calc(100% / 3); 
+
+@media screen and (max-width:$tablet) {
+    .gallery {
+        #gallery {
+            #wrap {
+                #list {
+                    .item {
+                        width:calc(94% / 2); 
+                    }
+                }
+            }
+            #searchBox {
+                input[type=text] {
+                    width: 300px;
+                }
+            }
+        }
+    }
+    .subscribe {
+        padding: 55px 10px;
+        height: 300px;
+        h2 {
+            font: bold 25px/1 'Roboto';
+        }
+        input[type=text] {
+            width: 200px;
+            height: 30px;
+            padding-left: 20px;
+            margin: 50px auto;
+        }
+        a {
+            font: 13px/30px 'Roboto';
+        }
     }
 }
 
-@media screen and (max-width:749px){
-    #gallery #wrap #list li { 
-        width:calc(100% / 2); 
+@media screen and (max-width:$mobile) {
+    .gallery {
+        #gallery {
+            #wrap {
+                #list {
+                    .item {
+                        width:100%; 
+                        margin: 0 0 20px 0;
+                        div {
+                            span {
+                                >img {
+                                    width: 30px;
+                                    height: 30px;
+                                    border-radius: 50%;
+                                    margin: 0 10px 0 10px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            #searchBox {
+                input[type=text] {
+                    width: 150px;
+                }
+                .btnSearch {
+                    width: 60px;
+                    margin-left: 10px;
+                }
+            }
+        }
     }
-}
-
-@media screen and (max-width:439px){
-    #gallery #wrap #list li { 
-        width:calc(100% / 1); 
+    .subscribe {
+        padding: 35px 10px;
+        height: 200px;
+        h2 {
+            font: bold 17px/1 'Roboto';
+        }
+        input[type=text] {
+            width: 110px;
+            height: 30px;
+            padding-left: 10px;
+            margin: 25px auto;
+        }
+        a {
+            font: 10px/30px 'Roboto';
+        }
     }
 }

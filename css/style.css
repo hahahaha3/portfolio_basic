@@ -1410,6 +1410,64 @@ table {
   margin-left: 10px;
 }
 
+/*subscribe----------------------------------------------*/
+.subscribe {
+  text-align: center;
+  background: #131c55;
+  width: 100%;
+  color: #fff;
+  padding: 50px;
+  position: relative;
+}
+.subscribe h2 {
+  font: bold 30px/1 "Roboto";
+}
+.subscribe input[type=text] {
+  display: inline-flex;
+  width: 300px;
+  height: 30px;
+  padding-left: 20px;
+  margin: 50px 20px;
+}
+.subscribe a {
+  display: block;
+  width: 150px;
+  height: 30px;
+  font: 15px/30px "Roboto";
+  background: #131c55;
+  color: #fff;
+  border: 1px solid #fff;
+  margin: 0 auto;
+}
+.subscribe a:hover {
+  background: #fff;
+  color: #131c55;
+}
+
+/*banner_fix----------------------------------------------*/
+#banner_fix {
+  width: 100%;
+  padding: 130px 0;
+  background: url(../img/banner_fix4.jpeg) no-repeat center/cover fixed;
+}
+#banner_fix .inner {
+  width: 1180px;
+  margin: 0 auto;
+}
+#banner_fix .inner h1 {
+  font-weight: bold;
+  font-size: 30px;
+  font-family: arial;
+  color: #fff;
+  text-align: center;
+  margin-bottom: 30px;
+}
+#banner_fix .inner p {
+  font: 14px/1.3 "Roboto";
+  color: #bbb;
+  text-align: center;
+}
+
 /* tablet 구간 ----------------------------------------------------------- */
 @media screen and (max-width: 1179px) {
   /* header_sub---------------------------------------------------------- */
@@ -1903,6 +1961,7 @@ table {
 }
 .gallery #gallery #wrap {
   width: 100%;
+  padding: 50px;
 }
 .gallery #gallery #wrap .loading {
   width: 100px;
@@ -1920,6 +1979,7 @@ table {
   opacity: 0;
   transform: translateY(100px);
   transition: 1s;
+  text-align: center;
 }
 .gallery #gallery #wrap #list.on {
   opacity: 1;
@@ -1931,15 +1991,14 @@ table {
   clear: both;
 }
 .gallery #gallery #wrap #list .item {
-  width: 25%;
   float: left;
-  margin: 0 0 100px 0;
-}
-.gallery #gallery #wrap #list .item:nth-of-type(4n) {
-  margin-right: 0;
+  width: 24.5%;
+  border: 1px solid #d8d8d8;
+  margin: 0 5px 50px 0;
 }
 .gallery #gallery #wrap #list .item div {
   width: 100%;
+  height: 300px;
 }
 .gallery #gallery #wrap #list .item div a > img {
   width: 100%;
@@ -1960,7 +2019,7 @@ table {
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  margin-right: 10px;
+  margin: 0 10px 0 10px;
 }
 .gallery #gallery #wrap #list .item div span strong {
   font: 10px/1 "arial";
@@ -1994,37 +2053,6 @@ table {
   cursor: pointer;
   vertical-align: top;
 }
-.gallery .gallery_sub {
-  text-align: center;
-  background: #131c55;
-  width: 100%;
-  color: #fff;
-  padding: 50px;
-}
-.gallery .gallery_sub h2 {
-  font: bold 30px/1 "Roboto";
-}
-.gallery .gallery_sub input[type=text] {
-  display: inline-flex;
-  width: 300px;
-  height: 30px;
-  padding-left: 20px;
-  margin: 50px 20px;
-}
-.gallery .gallery_sub a {
-  display: block;
-  width: 150px;
-  height: 30px;
-  font: 15px/30px "Roboto";
-  background: #131c55;
-  color: #fff;
-  border: 1px solid #fff;
-  margin: 0 auto;
-}
-.gallery .gallery_sub a:hover {
-  background: #fff;
-  color: #131c55;
-}
 
 aside {
   width: 100%;
@@ -2056,19 +2084,65 @@ aside .close {
   font: bold 20px/1 "arial";
 }
 
-@media screen and (max-width: 999px) {
-  #gallery #wrap #list li {
-    width: 33.3333333333%;
+@media screen and (max-width: 1179px) {
+  .gallery #gallery #wrap #list .item {
+    width: 47%;
+  }
+  .gallery #gallery #searchBox input[type=text] {
+    width: 300px;
+  }
+
+  .subscribe {
+    padding: 55px 10px;
+    height: 300px;
+  }
+  .subscribe h2 {
+    font: bold 25px/1 "Roboto";
+  }
+  .subscribe input[type=text] {
+    width: 200px;
+    height: 30px;
+    padding-left: 20px;
+    margin: 50px auto;
+  }
+  .subscribe a {
+    font: 13px/30px "Roboto";
   }
 }
-@media screen and (max-width: 749px) {
-  #gallery #wrap #list li {
-    width: 50%;
-  }
-}
-@media screen and (max-width: 439px) {
-  #gallery #wrap #list li {
+@media screen and (max-width: 539px) {
+  .gallery #gallery #wrap #list .item {
     width: 100%;
+    margin: 0 0 20px 0;
+  }
+  .gallery #gallery #wrap #list .item div span > img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin: 0 10px 0 10px;
+  }
+  .gallery #gallery #searchBox input[type=text] {
+    width: 150px;
+  }
+  .gallery #gallery #searchBox .btnSearch {
+    width: 60px;
+    margin-left: 10px;
+  }
+
+  .subscribe {
+    padding: 35px 10px;
+    height: 200px;
+  }
+  .subscribe h2 {
+    font: bold 17px/1 "Roboto";
+  }
+  .subscribe input[type=text] {
+    width: 110px;
+    height: 30px;
+    padding-left: 10px;
+    margin: 25px auto;
+  }
+  .subscribe a {
+    font: 10px/30px "Roboto";
   }
 }
 .join .sub {
@@ -2351,18 +2425,18 @@ aside .close {
 }
 .youtube #vidTop .inner .vidTop_txt h2 {
   text-align: left;
-  font: bold 18px/1 "arial";
+  font: bold 18px/1 "Roboto";
   margin: 100px 0 30px;
 }
 .youtube #vidTop .inner .vidTop_txt h1 {
   text-align: left;
-  font: bold 30px/1 "arial";
+  font: bold 30px/1 "Roboto";
   margin-bottom: 0;
 }
 .youtube #vidTop .inner .vidTop_txt p {
   width: 530px;
   text-align: left;
-  font: normal 13px/1.5 "arial";
+  font: normal 13px/1.5 "Roboto";
   margin: 30px 0 100px;
   color: #888;
 }
@@ -2413,15 +2487,15 @@ aside .close {
   width: 100%;
 }
 .youtube #vidTop .inner .vidTop_main h5 {
-  font: 12px/1 "arial";
+  font: 12px/1 "Roboto";
   margin: 10px 0 15px;
   color: #777;
 }
 .youtube #vidTop .inner .vidTop_main h3 {
-  font: bold 16px/1 "arial";
+  font: bold 16px/1 "Roboto";
 }
 .youtube #vidTop .inner .vidTop_main p {
-  font: 10px/1.5 "arial";
+  font: 10px/1.5 "Roboto";
   margin: 15px 0;
   color: #888;
 }
@@ -2440,7 +2514,7 @@ aside .close {
 }
 .youtube #vidMain .inner h2 {
   position: absolute;
-  font: 25px/1 "arial";
+  font: 25px/1 "Roboto";
 }
 .youtube #vidMain .inner .vidList {
   position: relative;
@@ -2477,18 +2551,18 @@ aside .close {
   transition: all 0.4s ease-in;
 }
 .youtube #vidMain .inner .vidList article .con h2 {
-  font: bold 13px/1.2 "arial";
+  font: bold 13px/1.2 "Roboto";
   color: #131c55;
   margin-bottom: 15px;
 }
 .youtube #vidMain .inner .vidList article .con p {
-  font: 10px/1.4 "arial";
+  font: 10px/1.4 "Roboto";
   color: rgba(0, 0, 0, 0.6);
   margin-top: 50px;
 }
 .youtube #vidMain .inner .vidList article .con span {
   float: right;
-  font: normal 10px/1 "arial";
+  font: normal 10px/1 "Roboto";
   color: orangered;
   opacity: 0.8;
 }
@@ -2520,8 +2594,60 @@ figure.pop .btnClose {
   top: 30px;
   right: 30px;
   color: #fff;
-  font: bold 20px/1 "arial";
+  font: bold 20px/1 "Roboto";
   cursor: pointer;
+}
+
+@media screen and (max-width: 1179px) {
+  .youtube #vidTop .inner .vidTop_txt {
+    width: 100%;
+    margin-top: 0px;
+    padding: 0px;
+  }
+  .youtube #vidTop .inner .vidTop_txt h2 {
+    font: bold 20px/1 "Roboto";
+    margin: 50px 0 30px;
+  }
+  .youtube #vidTop .inner .vidTop_txt h1 {
+    font: bold 25px/1 "Roboto";
+  }
+  .youtube #vidTop .inner .vidTop_txt p {
+    width: 100%;
+    font: normal 12px/1.5 "Roboto";
+    margin: 30px 0 50px;
+    color: #888;
+  }
+  .youtube #vidTop .inner .vidTop_txt #slider {
+    display: none;
+  }
+  .youtube #vidTop .inner .vidTop_txt .prev {
+    display: none;
+  }
+  .youtube #vidTop .inner .vidTop_txt .next {
+    display: none;
+  }
+  .youtube #vidTop .inner .vidTop_main {
+    width: 100%;
+  }
+  .youtube #vidMain .inner h2 {
+    font: 20px/1 "Roboto";
+  }
+  .youtube #vidMain .inner .vidList article {
+    position: relative;
+    width: 47.5%;
+    height: 250px;
+    margin: 20 0px;
+  }
+}
+@media screen and (max-width: 539px) {
+  .youtube #vidMain .inner h2 {
+    font: 20px/1 "Roboto";
+  }
+  .youtube #vidMain .inner .vidList article {
+    position: relative;
+    width: 100%;
+    height: 230px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
