@@ -76,7 +76,6 @@ vidList.addEventListener('click', e => {
     }
 })
 
-
 init();
 next.addEventListener('click', e => {
     e.preventDefault();
