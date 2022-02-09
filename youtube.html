@@ -9,7 +9,6 @@
     <link rel="stylesheet" href="css/style.css">
     <script defer src="js/youtube.js"></script>
     <script defer src="js/anime.js"></script>    
-    <script defer src="js/main.js"></script>  
     <script>
         window.addEventListener('load', () => {
             new BtnCall();
@@ -17,7 +16,6 @@
     </script>
 </head>
 <body>
-
     <header id="header">
         <div class="inner">
             <h1><a href="index.html">DCODELAB</a></h1>
@@ -108,10 +106,10 @@
 
                     <article id="slider">
                         <ul>
-                            <li><img src="img/youtube1.jpeg" alt=""></li>
-                            <li><img src="img/youtube2.jpeg" alt=""></li>
-                            <li><img src="img/youtube3.jpeg" alt=""></li>
-                            <li><img src="img/youtube4.jpeg" alt=""></li>
+                            <li><iframe width="200" height="115" src="https://www.youtube-nocookie.com/embed/cw9xJ-3BxVs?controls=0" allowfullscreen></iframe></li>
+                            <li><iframe width="200" height="115" src="https://www.youtube-nocookie.com/embed/kVxTrhojpFI?controls=0" allowfullscreen></iframe></li>
+                            <li><iframe width="200" height="115" src="https://www.youtube-nocookie.com/embed/bl_eV3MqOwI?controls=0" allowfullscreen></iframe></li>
+                            <li><iframe width="200" height="115" src="https://www.youtube-nocookie.com/embed/7mnl-deo48c?controls=0" allowfullscreen></iframe></li>
                         </ul>
                     </article>
 
@@ -124,11 +122,12 @@
                     
                 </div>
                 <div class="vidTop_main">
-                    <img src="img/youtube3.jpg" alt="">
+                    <!-- <img src="img/youtube3.jpg" alt=""> -->
+                    <section id="vidMain"></section>
                     <h5>Warren Munoz</h5>
                     <h3>Our top priority, at the heart of everything we do</h3>
                     <p>Our world is changing. And so are we. At Airbus, we want to be known not only for our exceptional products and services, but also for the positive impact we have on the world and its citizens. This starts by rethinking our approach to the way we do business to ensure we can step up and be a driving force for change.</p>
-                    <a href="#">VIEWS</a>
+                    <a href="#" class="vidMain_View">VIEWS</a>
                     <a href="#">LIKES</a>
                 </div>
             </div>
@@ -140,9 +139,8 @@
                 <div class="vidList"></div>
             </div>
         </section>
-
     </section>
-
+    <i class="fas fa-arrow-circle-up gototop"></i>
     <footer id="footer">
         <div class="inner">
             <h1>DCODELAB</h1>

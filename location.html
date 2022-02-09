@@ -9,7 +9,6 @@
 
     <script src="https://kit.fontawesome.com/21974f618d.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/style.css">
-    <script defer src="js/main.js"></script>
     <script defer src="js/location.js"></script>
     <script>
         window.addEventListener('load', () => {
@@ -100,18 +99,46 @@
 
         <div class="inner">
             <!-- 컨텐츠 들어가는 부분 -->
-            <ul class="traffic">
-                <li><a href="#">Traffic information On</a></li>
-                <li class="on"><a href="#">Traffic information Off</a></li>
-            </ul>
-            <ul class="branch">
-                <li class="on" data-index="0"><a href="#">Head office</a></li>
-                <li data-index="1"><a href="#">Branch1</a></li>
-                <li data-index="2"><a href="#">Branch2</a></li>
-            </ul>
 
-            
-            <div id="map"></div>
+            <section class="contactUs">
+                <article class="contactTxt">
+                    <span>CONTACT US</span>
+                    <h1>Get in Touch</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Id velit consequatur at delectus nostrum sapiente alias sequi dolores, quis error.</p>
+                    <h3>CALL US OFFICE</h3>
+                    <h2>(412) - 395 - 0424</h2>
+                </article>
+
+                <article class="contactForm">
+                    <input type="text" placeholder="Name">
+                    <input type="email" placeholder="Email Address">
+                    <textarea name="message" id="message" placeholder=" Message" required></textarea>
+                    <button type="submit">Submit</button>
+                </article>
+            </section>
+
+            <div class="wrap">
+                <article class="branch_btns on" data-index="0">
+                    <i class="fas fa-building"></i>
+                    <h2>Incheon Airport</h2>
+                    <p>271, Gonghang-ro, Incheon, <br>Republic of Korea</p>
+                    <a href="#"><span>1577-2600</span></a>
+                </article>
+                <article class="branch_btns" data-index="1">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <h2>Gimpo Airport</h2>
+                    <p>38, Haneul-gil, Gangseo-gu, Seoul, <br>Republic of Korea</p>
+                    <a href=""><span>1661-2626</span></a>
+                </article>
+                <article class="branch_btns" data-index="3">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <h2>Jeju Airport</h2>
+                    <p>2, Gonghang-ro, Jeju-si, Jeju-do, <br>Republic of Korea</p>
+                    <a href="#"><span>1661-2626</span></a>
+                </article>
+            </div>
+
+        <div id="map"></div>
         </div>
     </section>
     <article class="subscribe">
@@ -121,7 +148,8 @@
             <input type="text" name="email" id="email" placeholder="Email">
             <a href="#">SUBSCRIBE</a>
         </div>
-</article>
+    </article>
+    <i class="fas fa-arrow-circle-up gototop"></i>
     <footer id="footer">
         <div class="inner">
             <h1>DCODELAB</h1>

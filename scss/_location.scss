@@ -9,60 +9,122 @@
             background: url(../img/locat.jpeg) no-repeat center/cover;
         }
     }
+    .contactUs {
+        width: 100%;
+        display: flex;
+        margin: 50px 0;
+        .contactTxt {
+            width: 580px;
+            margin-right: 20px;
+            >span {
+                font: 15px/1 'Roboto';
+                color: #777;
+            }
+            >h1 {
+                margin: 10px 0 40px 0;
+                font: bold 50px/1 'Roboto';
+                color: #131c55;
+            }
+            >p {
+                font: 15px/1.5 'arial';
+                color: #888;
+            }
+            >h3 {
+                font: bold 15px/1 'Roboto';
+                margin: 30px 0 20px 0;
+                color: #131c55;
+            }
+            >h2 {
+                font: normal 30px/1 'Roboto';
+                color: #555;
+            }
+        }
+        .contactForm {
+            width: 580px;
+            background: rgba(255, 255, 255, 0.747);
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin-top: 20px;
+            padding: 25px 0;
+            border: 1px solid #999;
+            input[type=text], input[type=email] {
+                width: 90%;
+                height: 2.5rem;
+                padding-left: 1.5rem;
+                margin-bottom: 20px;
+                background:#efefef;
+                border: none;
+            }
+            textarea {
+                width: 90%;
+                height: 10rem;
+                padding: 1rem;
+                background:#efefef;
+                border: none;
+            }
+            button {
+                display: block;
+                width: 8rem;
+                height: 2.5rem;
+                background: #131c55;
+                color: white;
+                margin-top: 10px;
+                border: none;
+                border-radius: 5px;
+                cursor: pointer;
+            }
+        }
+    }
+    .wrap {
+        width: 100%;
+        article {
+            width: 380px;
+            height: 200px;
+            padding: 30px;
+            float: left;
+            margin-right: 20px;
+            text-align: center;
+            border: 1px solid #999;
+            border-radius: 5px;
+            box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.5);
+            transition: 0.5s;
+            &.on {
+                background: #131c55;
+                border: none;
+            }
+            &.on i, &.on h2, &.on p, &.on span {
+                color: #fff;
+            }
+
+            i {
+                font-size: 30px;
+                color: orangered;
+            }
+            h2 {
+                margin: 20px 0 5px;
+                color: #131c55;
+            }
+            p {
+                font: 13px/1.3 'Roboto';
+                color: #777;
+                margin-bottom: 20px;
+            }
+            span {
+                color: rgba(255, 68, 0, 0.87);
+                font: normal 15px/1 'Roboto';
+            }
+            &:nth-of-type(3) {
+                margin-right: 0;
+            }
+        }
+    }
     #map {
-        margin-top: 100px;
         width: 100%;
         height: 500px;
-        //border: 1px solid #000;
         margin-top: 20px;
-    }
-    &::after {
-        content: ' ';
-        display: block;
-        clear: both;
-    }
-    .traffic {
-        float: left;
-        margin: 40px 20px 20px 0;
-        li {
-            float: left;
-            a {
-                display: block;
-                width: 160px;
-                height: 40px;
-                background: #fff;
-                font: bold 12px/40px '맑은 고딕';
-                color: #131c55;
-                text-align: center;
-                border: 1px solid #131c55;
-            }
-            &.on a {
-                background: #131c55;
-                color: #fff;
-            }
-        }
-    }
-    .branch {
-        float: right;
-        margin: 40px 0px 20px 0;
-        li{
-            float: left;
-            margin-left: 10px;
-            a{
-                display: block;
-                width: 160px;
-                height: 40px;
-                background: #fff;
-                font: bold 12px/40px '맑은 고딕';
-                color: #131c55;
-                text-align: center;
-                border: 1px solid #131c55;
-            }
-            &.on a {
-                background: #131c55;
-                color: #fff;
-            }
-        }
     }
 }
 @media screen and (max-width: $tablet) {
@@ -70,27 +132,47 @@
         #map {
             height: 350px;
         }
-        .traffic {
-            width: 100%;
-            li {
-                float: left;
-                width: calc(98% / 2);
-                margin-right: 1%;
-                a {
-                    width: 100%;
+        .contactUs {
+            .contactTxt {
+                >span {
+                    font: 13px/1 'Roboto';
+                }
+                >h1 {
+                    margin: 10px 0 30px 0;
+                    font: bold 40px/1 'Roboto';
+                }
+                >h3 {
+                    font: bold 15px/1 'Roboto';
+                    margin: 30px 0 20px 0;
+                    color: #131c55;
+                }
+                >h2 {
+                    font: normal 25px/1 'Roboto';
                 }
             }
         }
-        .branch {
-            float: left;
-            width: 100%;
-            li{
-                float: left;
-                width: calc(97% / 3);
-                margin-left: 0px;
+        .wrap {
+            article {
+                width: calc(98% / 3);
+                padding: 20px 15px;
                 margin-right: 1%;
-                a{
-                    width: 100%;
+                border-radius: 3px;
+                box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.5);
+                i {
+                    font-size: 30px;
+                }
+                h2 {
+                    margin: 15px 0 5px;
+                }
+                p {
+                    font: 10px/1.3 'Roboto';
+                    margin-bottom: 10px;
+                }
+                span {
+                    font: normal 15px/1 'Roboto';
+                }
+                &:nth-of-type(3) {
+                    margin-right: 0;
                 }
             }
         }
@@ -98,10 +180,52 @@
 }
 @media screen and (max-width: $mobile) {
     .location {
-        .traffic {
-            li {
-                width: calc(98% / 2);
-                margin-right: 1%;
+        .contactUs {
+            display: block;
+            .contactTxt {
+                width: 100%;
+                >span {
+                    font: 10px/1 'Roboto';
+                }
+                >h1 {
+                    margin: 10px 0 30px 0;
+                    font: bold 40px/1 'Roboto';
+                }
+                >h3 {
+                    font: bold 13px/1 'Roboto';
+                    margin: 10px 0;
+                    color: #131c55;
+                }
+                >h2 {
+                    font: normal 18px/1 'Roboto';
+                    margin-bottom: 30px;
+                }
+            }
+            .contactForm {
+                width: 100%;
+            }
+        }
+        .wrap {
+            article {
+                height: 130px;
+                padding: 10px 5px;
+                i {
+                    font-size: 30px;
+                    color: orangered;
+                }
+                h2 {
+                    font-size: 18px;
+                }
+                p {
+                    display: none;
+                }
+                span {
+                    color: #777;
+                    font: normal 12px/1 'Roboto';
+                }
+                &:nth-of-type(3) {
+                    margin-right: 0;
+                }
             }
         }
     }

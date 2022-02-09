@@ -1,26 +1,8 @@
-/*
-키:
-afa267e57b8885c90d6e77c92d86a32f
-비밀:
-26a51ead0c94f7d0
-
-https://live.staticflickr.com/{server-id}/{id}_{secret}_{size-suffix}.jpg
-
-데이터 요청 url
-https://www.flickr.com/services/rest/?method=flickr.test.echo&name=value
-
-http://farm{icon-farm}.staticflickr.com/{icon-server}/buddyicons/{nsid}.jpg
-
-flickr.interestingness.getList
-flickr.photos.search
-*/
-
 const body = document.querySelector('body');
 const frame = document.querySelector('#list');
 const loading = document.querySelector('.loading');
 const input = document.querySelector('#search');
 const btnSearch = document.querySelector('.btnSearch');
-
 const base = 'https://www.flickr.com/services/rest/?';
 const method1 = 'flickr.interestingness.getList';
 const method2 = 'flickr.photos.search';
@@ -28,9 +10,9 @@ const key = 'afa267e57b8885c90d6e77c92d86a32f';
 const per_page = 8;
 const format = 'json';
 
-const url1 = `${base}method=${method1}&api_key=${key}&per_page=${per_page}&format=${format}&nojsoncallback=1`;
+const url = `${base}method=${method1}&api_key=${key}&per_page=${per_page}&format=${format}&nojsoncallback=1`;
 
-callData(url1);
+callData(url);
 
 btnSearch.addEventListener('click', e => {
     let tag = input.value;
@@ -60,7 +42,6 @@ input.addEventListener('keyup', e => {
         let tag = input.value;
         tag = tag.trim();
         const url = `${base}method=${method2}&api_key=${key}&per_page=${per_page}&format=${format}&nojsoncallback=1&tags=${tag}&privacy_filter=1`;
-
         if(tag != '') {
             callData(url);
         } else {
@@ -81,10 +62,8 @@ input.addEventListener('keyup', e => {
 frame.addEventListener('click', e => {
     e.preventDefault();
     let target = e.target.closest('.item').querySelector('.thumb');
-    //console.log(target);
     if(e.target == target) {
         let imgSrc = target.parentElement.getAttribute('href');
-
         let pop = document.createElement('aside');
         pop.classList.add('pop');
         let pops = `
@@ -110,12 +89,10 @@ body.addEventListener('click', e=>{
     }
 });
 
-
 function callData(url) {
     frame.innerHTML = '';
     loading.classList.remove('off');
     frame.classList.remove('on');
-
     fetch(url)
     .then(data => {
         return data.json();
@@ -125,18 +102,15 @@ function callData(url) {
         if(items.length > 0) {
             const errMsgs = frame.parentElement.querySelectorAll('p');
             if(errMsgs.length > 0) frame.parentElement.querySelector('p').remove();
-            
             createList(items);
             delayLoading();
         } else {
             loading.classList.add('off');
-
             const errMsgs = frame.parentElement.querySelectorAll('p');
             if(errMsgs.length > 0) frame.parentElement.querySelector('p').remove();
             const errMsg = document.createElement('p');
             errMsg.append('검색어의 이미지가 없습니다.');
             frame.parentElement.append(errMsg);
-        
             frame.classList.remove('on');
             frame.style.height = 'auto';
         }
@@ -152,15 +126,19 @@ function createList(items) {
 
         htmls += `
         <li class="item">
-            <div>
+            <div class="e_item">
+                <span>
+                    <strong>${data.owner}</strong>
+                    <img class="profile" src="http://farm${data.farm}.staticflickr.com/${data.server}/buddyicons/${data.owner}.jpg">
+                </span>
+                <div class="title_p">
+                    <h2>${data.title}</h2>
+                    <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum.</p>
+                    <a class="viewBtn">View More</a>
+                </div>
                 <a href=${imgSrcBig}>
                     <img src=${imgSrc} class="thumb">
                 </a>
-                <p>${data.title}</p>
-                <span>
-                    <img class="profile" src="http://farm${data.farm}.staticflickr.com/${data.server}/buddyicons/${data.owner}.jpg">
-                    <strong>${data.owener}</strong>
-                </span>
             </div>
         </li>
         `;
@@ -188,6 +166,27 @@ function delayLoading() {
             e.currentTarget.closest('.item').querySelector('.profile').setAttribute('src', 'https://www.flickr.com/images/buddyicon.gif');
         }
     }
+}
+
+function clickAside(item) {
+    item.addEventListener('click', e => {
+        e.preventDefault();
+        let target = e.target.closest('.item').querySelector('.thumb');
+        if(e.target == target) {
+            let imgSrc = target.parentElement.getAttribute('href');
+            let pop = document.createElement('aside');
+            pop.classList.add('pop');
+            let pops = `
+                                <div class="con">
+                                    <img src=${imgSrc}>
+                                </div>
+                                <span class="close">CLOSE</span>
+            `;
+            pop.innerHTML = pops;
+            body.append(pop);
+            body.style.overflow = 'hidden';
+        }
+    })
 }
 
 function isoLayout() {

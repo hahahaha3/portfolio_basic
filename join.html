@@ -8,6 +8,7 @@
     <script src="https://kit.fontawesome.com/21974f618d.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/style.css">
     <script defer src="js/join.js"></script>
+    <script defer src="js/main.js"></script>
     <script>
         window.addEventListener("load", ()=>{
             new Validation("#member", [
@@ -52,7 +53,6 @@
     <header id="header">
         <div class="inner">
             <h1><a href="index.html">DCODELAB</a></h1>
-
             <nav class="menuWeb">
                 <ul id="gnb">
                     <li class="depth1">
@@ -130,6 +130,11 @@
                 <div class="inner"><h2 class="sub_h2">JOIN</h2></div>
         </div>
         <div class="inner">
+            <section>                
+                <span>Let's scale your brand, <br>together</span>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias recusandae fuga voluptate autem, quas aperiam saepe, fugit enim tenetur culpa quae magni. Alias corporis distinctio assumenda quia unde cupiditate molestias, necessitatibus similique beatae vel quam vitae consequatur, reiciendis quibusdam..</p>
+                <img src="img/desk.png" alt="">
+            </section>
             <form action="result.html" method="get" id="member">
                 <fieldset>    <!-- 폼요소안에서 그룹을 나눌 수 있음 -->
                     <legend class="hidden">회원가입 폼 입력 양식</legend>
@@ -149,7 +154,7 @@
                         <tbody>
                             <!-- userid -->
                             <tr>
-                                <th scope="row"><label for="userid">USER ID</label></th>
+                                <th scope="col"><label for="userid">USER ID</label></th>
                                 <td>
                                     <input type="text" name="userid" id="userid" placeholder="아이디를 입력하세요" required>
                                 </td>
@@ -219,7 +224,7 @@
                             </tr>
                             <!-- comments -->
                             <tr>
-                                <th scope="row"><label for="comments">Comments</label></th>
+                                <th scope="row"><label for="comments">COMMENTS</label></th>
                                 <td>
                                     <textarea name="comments" id="comments" placeholder="남기는 말을 입력하세요" required></textarea>
                                 </td>
@@ -233,11 +238,13 @@
                             </tr>
                         </tbody>
                     </table>
+
+
                 </fieldset>
             </form>
         </div>
     </section>
-
+    <i class="fas fa-arrow-circle-up gototop"></i>
     <footer id="footer">
         <div class="inner">
             <h1>DCODELAB</h1>

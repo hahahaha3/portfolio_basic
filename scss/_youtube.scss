@@ -48,11 +48,7 @@
                             display:flex; 
                             justify-content:center; 
                             align-items:center; 
-                            img {
-                                width: 200px;
-                                height: 130px;
-                                margin-right: 10px;
-                            }
+                            border: none;
                         }
                     }
                 }
@@ -79,10 +75,6 @@
             .vidTop_main {
                 width: 580px;
                 margin: 100px 0 0 20px;
-                >img {
-                    width: 100%;
-                    
-                }
                 h5 {
                     font: 12px/1 'Roboto';
                     margin: 10px 0 15px;
@@ -200,7 +192,7 @@ figure.pop {
         top: 30px;
         right: 30px;
         color: #fff;
-        font: bold 20px/1 'Roboto';
+        font: bold 15px/1 'Roboto';
         cursor: pointer;
     }
 }

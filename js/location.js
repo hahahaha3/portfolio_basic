@@ -1,59 +1,46 @@
 var mapContainer = document.getElementById('map');
 const t_on = document.querySelectorAll('.traffic li')[0];
 const t_off = document.querySelectorAll('.traffic li')[1];
-const branch_btns = document.querySelectorAll('.branch li');
+const branch_btns = document.querySelectorAll('.branch_btns');
 
 let drag = true; 
-let zoom = true; 
+let zoom = false; 
 
     mapOption = { 
-        center: new kakao.maps.LatLng(37.50896573660853, 127.06181652131768), 
-        level: 3 
+        center: new kakao.maps.LatLng(37.459272748230944, 126.45974962289725),
+        draggable: false,
+        level: 7
     };
 var map = new kakao.maps.Map(mapContainer, mapOption); 
-t_on.addEventListener('click', e => {
-    e.preventDefault();
-    if(t_on.classList.contains('on')) return;
-    map.addOverlayMapTypeId(kakao.maps.MapTypeId.TRAFFIC);  
-    t_on.classList.add('on');
-    t_off.classList.remove('on');
-});
-t_off.addEventListener('click', e => {
-    e.preventDefault();
-    if(t_off.classList.contains('on')) return;
-    map.removeOverlayMapTypeId(kakao.maps.MapTypeId.TRAFFIC);  
-    t_off.classList.add('on');
-    t_on.classList.remove('on');
-});
 
 window.onresize = () => {
-    let active_btn = document.querySelector('.branch li.on');
+    let active_btn = document.querySelector('.branch_btns.on');
     let active_index = active_btn.getAttribute('data-index');
     map.setCenter(markerOptions[active_index].latlng);
 }
 
 var markerOptions = [
     {
-        title: '본점',
-        latlng: new kakao.maps.LatLng(37.50896573660853, 127.06181652131768),
+        title: '인천공항',
+        latlng: new kakao.maps.LatLng(37.459272748230944, 126.45974962289725),
         imgSrc: 'img/llo.png',
-        imageSize: new kakao.maps.Size(90, 90),
+        imageSize: new kakao.maps.Size(50, 50),
         imgPos: {offset: new kakao.maps.Point(116, 99)},
         button: branch_btns[0]
     },
     {
-        title: '지점1',
-        latlng: new kakao.maps.LatLng(33.518268193162946, 126.52308548747929),
+        title: '김포공항',
+        latlng: new kakao.maps.LatLng(37.54700467448257, 126.81579726787132),
         imgSrc: 'img/llo.png',
-        imageSize: new kakao.maps.Size(90, 90),
+        imageSize: new kakao.maps.Size(50, 50),
         imgPos: {offset: new kakao.maps.Point(116, 99)},
         button: branch_btns[1]
     },
     {
-        title: '지점2',
-        latlng: new kakao.maps.LatLng(33.23249725539617, 126.3654200043578),
+        title: '제주공항',
+        latlng: new kakao.maps.LatLng(33.500263917139755, 126.51049639615015),
         imgSrc: 'img/llo.png',
-        imageSize: new kakao.maps.Size(90, 90),
+        imageSize: new kakao.maps.Size(50, 50),
         imgPos: {offset: new kakao.maps.Point(116, 99)},
         button: branch_btns[2]
     }
@@ -80,6 +67,12 @@ for(let i = 0; i<markerOptions.length; i++) {
 var mapTypeControl = new kakao.maps.MapTypeControl();
 map.addControl(mapTypeControl, kakao.maps.ControlPosition.TOPRIGHT);
 
+var zoomControl = new kakao.maps.ZoomControl();
+map.addControl(zoomControl, kakao.maps.ControlPosition.RIGHT);
+kakao.maps.event.addListener(map, 'zoom_changed', function() {        
+    var level = map.getLevel();
+});
+
 setDraggable(drag);
 function setDraggable(draggable) {
     map.setDraggable(draggable);    
@@ -95,3 +88,20 @@ function moveTo(target) {
     map.setCenter(moveLatLon);
 }
 
+class BtnCall {
+    constructor() {
+        this.init();
+        this.bindingEvent();
+    }
+    init() {
+        this.btnCall = document.querySelector(".btnCall");
+        this.menuMo = document.querySelector(".menuMo");
+    }
+    bindingEvent() {
+        this.btnCall.addEventListener('click', e => {
+            e.preventDefault(); 
+            this.btnCall.classList.toggle("on");
+            this.menuMo.classList.toggle("on");
+        });
+    }
+}
