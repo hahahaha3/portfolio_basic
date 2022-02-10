@@ -1,4 +1,5 @@
 .join {
+    padding-bottom: 0;
     .sub {
         width: 100%;
         height: 300px;
@@ -6,6 +7,9 @@
         position: relative;
         .sub_visual {
             background: url(../img/banner_fix.jpeg) no-repeat center/cover;
+        }
+        .sub_inner {
+            height: 0;
         }
     }
 
@@ -16,21 +20,21 @@
         section {
             width: 580px;
             float: left;
-            margin-top: 100px;
-            padding: 0 50px;
-            >span {
+            >h2, h3 {
                 font: bold 40px/1.3 'Roboto';
                 color: #131c55;
+                padding: 0 50px;
             }
             >p {
-                margin-top: 50px;
+                margin: 40px 0;
                 padding: 0 0px;
                 font: 15px/1.3 'arial';
                 color: #888;
+                padding: 0 50px;
             }
             img {
                 width: 100%;
-                height: 500px;
+                height: 100%;
             }
         }
         #member {
@@ -67,14 +71,14 @@
                     text-align: left;
                     font: 12px/1 'arial';
                     color: #131c55;
-                    padding: 20px;
+                    padding: 15px 20px;
                     &:last-child {
                         text-align: center;
                         border-right: none;
                     }
     
                     input[type=reset], input[type=submit]{
-                        width: 150px;
+                        width: 180px;
                         height: 40px;
                         border: 1px solid #999;;
                         background: #f4e9df;
@@ -90,7 +94,7 @@
                 }
     
                 td {
-                    padding: 20px 30px;
+                    padding: 0px 30px;
     
                     input[type=text], input[type=password], select {
                         width: 40%;
@@ -151,66 +155,82 @@
 /* tablet ------------------------------------------ */
 @media screen and (max-width: $tablet) {
     .join {
-        .inner 
-            table {
-                th {
+        .inner {
+            margin-top: 0px;
+            section {
+                width: 100%;
+                >p {
                     display: none;
-
-                    &:last-child {
-                        display: block;
-                        width: 100%;
-                    }
                 }
-    
-                td {
-                    input[type=text], input[type=password] {
-                        width: 60%;
-                    }
-                    select#company {
-                        width: 30%;
-                    }
-                    textarea#comments {
-                        width: 91%;
-                    }
-                    .hobbyTxt, .genderTxt {
-                        display: block;
-                    }
+                img {
+                    width: 100%;
+                    height: 100%;
                 }
+            }
+            #member {
+                width: 100%;
             }
         }
     }
+}
 /* moblie ------------------------------------------ */
 @media screen and (max-width: $mobile) {
     .join {
-        .inner 
-            table {
-                th {
-                    font-size: 0;
-                    input[type=submit], input[type=reset] {
-                        width: 40%;
-                        margin: 0 5%;
-                    }
-                }
+        padding-bottom: 0;
+        .sub {
+            width: 100%;
+            height: 300px;
+            background-color: #000;
+            position: relative;
+            .sub_visual {
+                background: url(../img/banner_fix.jpeg) no-repeat center/cover;
+            }
+            .sub_inner {
+                height: 0;
+            }
+        }
     
-                td {
-                    input[type=text], input[type=password] {
-                        width: 100%;
+        .inner {
+            section {
+                >h2, h3 {
+                    display: none;
+                }
+                img {
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+            #member {
+                h3 {
+                    margin: 0px 0px 10px 0px;
+                }
+                table {
+                    width: 100%;
+                    th {
+                        width: 10%;
+                        font: 10px/1 'arial';
+                        padding: 5px;
+                        input[type=reset], input[type=submit]{
+                            width: 40%;
+                            height: 30px;
+                        }
                     }
-                    label {
-                        display: block;
-                        margin-right: 0px;
-                    }
-                    select#company {
-                        width: 100%;
-                        margin-top: 10px;
-                    }
-                    textarea#comments {
-                        width: 100%;
-                    }
-                    .hobbyTxt, .genderTxt {
-                        display: block;
+        
+                    td {
+                        padding: 0px 30px;
+                        input[type=text], input[type=password], select {
+                            width: 100%;
+                        }
+                        select#company {
+                            width: 100%;
+                        }
+        
+                        input[type=checkbox], input[type=radio] {
+                            width: 25%;
+                        }
                     }
                 }
+            }
         }
     }
 }

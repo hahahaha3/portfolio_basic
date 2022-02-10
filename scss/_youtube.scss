@@ -48,7 +48,9 @@
                             display:flex; 
                             justify-content:center; 
                             align-items:center; 
-                            border: none;
+                            iframe {
+                                border: none;
+                            }
                         }
                     }
                 }
@@ -75,6 +77,11 @@
             .vidTop_main {
                 width: 580px;
                 margin: 100px 0 0 20px;
+                section {
+                    iframe {
+                        width: 100%;
+                    }
+                }
                 h5 {
                     font: 12px/1 'Roboto';
                     margin: 10px 0 15px;
@@ -92,6 +99,7 @@
                     display: inline-flex;
                     margin-right: 30px;
                     color: #333;
+                    font: 10px/1 'arial';
                 }
             }
         }

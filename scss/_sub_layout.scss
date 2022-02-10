@@ -271,7 +271,7 @@
         }
         .inner {
             width: 100%;
-            min-height: 400px;
+            min-height: 0px;
             padding: 0 30px;
         }
     }    
@@ -294,7 +294,7 @@
             height: 150px;
         }
         .inner {
-            min-height: 300px;
+            min-height: 0px;
             h1 {
                 font-size: 20px;
                 span {

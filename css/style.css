@@ -1507,7 +1507,7 @@ table {
   }
   .content .inner {
     width: 100%;
-    min-height: 400px;
+    min-height: 0px;
     padding: 0 30px;
   }
 
@@ -1529,7 +1529,7 @@ table {
     height: 150px;
   }
   .content .inner {
-    min-height: 300px;
+    min-height: 0px;
   }
   .content .inner h1 {
     font-size: 20px;
@@ -1819,11 +1819,12 @@ table {
   text-align: center;
 }
 .community .inner section ul li {
+  width: 49%;
   display: inline-block;
 }
 .community .inner section ul li a {
   display: block;
-  width: 588px;
+  width: 100%;
   height: 40px;
   font: 15px/40px "arial";
   color: #131c55;
@@ -1896,6 +1897,9 @@ table {
 
 /* tablet ---------------------------------------------------- */
 @media screen and (max-width: 1179px) {
+  .community .inner section {
+    width: 100%;
+  }
   .community .inner table tr th:nth-of-type(1) {
     width: 15%;
   }
@@ -1907,21 +1911,6 @@ table {
     display: none;
   }
   .community .inner table tr td:nth-of-type(4) {
-    display: none;
-  }
-  .community .inner .pagination .numbers a:nth-of-type(6) {
-    display: none;
-  }
-  .community .inner .pagination .numbers a:nth-of-type(7) {
-    display: none;
-  }
-  .community .inner .pagination .numbers a:nth-of-type(8) {
-    display: none;
-  }
-  .community .inner .pagination .numbers a:nth-of-type(9) {
-    display: none;
-  }
-  .community .inner .pagination .numbers a:nth-of-type(10) {
     display: none;
   }
 
@@ -2204,6 +2193,9 @@ aside .close {
     font: 10px/30px "Roboto";
   }
 }
+.join {
+  padding-bottom: 0;
+}
 .join .sub {
   width: 100%;
   height: 300px;
@@ -2213,6 +2205,9 @@ aside .close {
 .join .sub .sub_visual {
   background: url(../img/banner_fix.jpeg) no-repeat center/cover;
 }
+.join .sub .sub_inner {
+  height: 0;
+}
 .join .inner {
   background: #f4e9df;
   margin-top: 40px;
@@ -2221,22 +2216,22 @@ aside .close {
 .join .inner section {
   width: 580px;
   float: left;
-  margin-top: 100px;
-  padding: 0 50px;
 }
-.join .inner section > span {
+.join .inner section > h2, .join .inner section h3 {
   font: bold 40px/1.3 "Roboto";
   color: #131c55;
+  padding: 0 50px;
 }
 .join .inner section > p {
-  margin-top: 50px;
+  margin: 40px 0;
   padding: 0 0px;
   font: 15px/1.3 "arial";
   color: #888;
+  padding: 0 50px;
 }
 .join .inner section img {
   width: 100%;
-  height: 500px;
+  height: 100%;
 }
 .join .inner #member {
   width: 580px;
@@ -2273,14 +2268,14 @@ aside .close {
   text-align: left;
   font: 12px/1 "arial";
   color: #131c55;
-  padding: 20px;
+  padding: 15px 20px;
 }
 .join .inner #member table th:last-child {
   text-align: center;
   border-right: none;
 }
 .join .inner #member table th input[type=reset], .join .inner #member table th input[type=submit] {
-  width: 150px;
+  width: 180px;
   height: 40px;
   border: 1px solid #999;
   background: #f4e9df;
@@ -2294,7 +2289,7 @@ aside .close {
   color: #fff;
 }
 .join .inner #member table td {
-  padding: 20px 30px;
+  padding: 0px 30px;
 }
 .join .inner #member table td input[type=text], .join .inner #member table td input[type=password], .join .inner #member table td select {
   width: 40%;
@@ -2351,51 +2346,73 @@ aside .close {
 
 /* tablet ------------------------------------------ */
 @media screen and (max-width: 1179px) {
-  .join .inner table th {
-    display: none;
+  .join .inner {
+    margin-top: 0px;
   }
-  .join .inner table th:last-child {
-    display: block;
+  .join .inner section {
     width: 100%;
   }
-  .join .inner table td input[type=text], .join .inner table td input[type=password] {
-    width: 60%;
+  .join .inner section > p {
+    display: none;
   }
-  .join .inner table td select#company {
-    width: 30%;
+  .join .inner section img {
+    width: 100%;
+    height: 100%;
   }
-  .join .inner table td textarea#comments {
-    width: 91%;
-  }
-  .join .inner table td .hobbyTxt, .join .inner table td .genderTxt {
-    display: block;
+  .join .inner #member {
+    width: 100%;
   }
 }
 /* moblie ------------------------------------------ */
 @media screen and (max-width: 539px) {
-  .join .inner table th {
-    font-size: 0;
+  .join {
+    padding-bottom: 0;
   }
-  .join .inner table th input[type=submit], .join .inner table th input[type=reset] {
+  .join .sub {
+    width: 100%;
+    height: 300px;
+    background-color: #000;
+    position: relative;
+  }
+  .join .sub .sub_visual {
+    background: url(../img/banner_fix.jpeg) no-repeat center/cover;
+  }
+  .join .sub .sub_inner {
+    height: 0;
+  }
+  .join .inner section > h2, .join .inner section h3 {
+    display: none;
+  }
+  .join .inner section img {
+    width: 100%;
+    height: 100%;
+  }
+  .join .inner #member h3 {
+    margin: 0px 0px 10px 0px;
+  }
+  .join .inner #member table {
+    width: 100%;
+  }
+  .join .inner #member table th {
+    width: 10%;
+    font: 10px/1 "arial";
+    padding: 5px;
+  }
+  .join .inner #member table th input[type=reset], .join .inner #member table th input[type=submit] {
     width: 40%;
-    margin: 0 5%;
+    height: 30px;
   }
-  .join .inner table td input[type=text], .join .inner table td input[type=password] {
+  .join .inner #member table td {
+    padding: 0px 30px;
+  }
+  .join .inner #member table td input[type=text], .join .inner #member table td input[type=password], .join .inner #member table td select {
     width: 100%;
   }
-  .join .inner table td label {
-    display: block;
-    margin-right: 0px;
-  }
-  .join .inner table td select#company {
-    width: 100%;
-    margin-top: 10px;
-  }
-  .join .inner table td textarea#comments {
+  .join .inner #member table td select#company {
     width: 100%;
   }
-  .join .inner table td .hobbyTxt, .join .inner table td .genderTxt {
-    display: block;
+  .join .inner #member table td input[type=checkbox], .join .inner #member table td input[type=radio] {
+    width: 25%;
   }
 }
 .location {
@@ -2668,6 +2685,8 @@ aside .close {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.youtube #vidTop .inner .vidTop_txt #slider ul li iframe {
   border: none;
 }
 .youtube #vidTop .inner .vidTop_txt .prev {
@@ -2692,6 +2711,9 @@ aside .close {
   width: 580px;
   margin: 100px 0 0 20px;
 }
+.youtube #vidTop .inner .vidTop_main section iframe {
+  width: 100%;
+}
 .youtube #vidTop .inner .vidTop_main h5 {
   font: 12px/1 "Roboto";
   margin: 10px 0 15px;
@@ -2709,6 +2731,7 @@ aside .close {
   display: inline-flex;
   margin-right: 30px;
   color: #333;
+  font: 10px/1 "arial";
 }
 .youtube #vidMain {
   width: 100%;
