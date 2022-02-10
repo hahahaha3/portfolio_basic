@@ -1852,44 +1852,86 @@ table {
   z-index: 2;
   opacity: 1;
 }
-.community .inner section table {
+.community .inner section .tab1 {
   width: 100%;
   height: 100%;
   border-bottom: 2px solid #131c55;
   border-collapse: collapse;
 }
-.community .inner section table tr:nth-of-type(even) {
+.community .inner section .tab1 tr:nth-of-type(even) {
   background: #fff;
 }
-.community .inner section table tr:hover {
+.community .inner section .tab1 tr:hover {
   background: #131c5541;
 }
-.community .inner section table tr th {
+.community .inner section .tab1 tr th {
   padding: 15px;
   background: #131c55;
   color: #fff;
 }
-.community .inner section table tr th:nth-of-type(1) {
+.community .inner section .tab1 tr th:nth-of-type(1) {
   width: 10%;
 }
-.community .inner section table tr th:nth-of-type(3) {
+.community .inner section .tab1 tr th:nth-of-type(3) {
   width: 15%;
 }
-.community .inner section table tr th:nth-of-type(4) {
+.community .inner section .tab1 tr th:nth-of-type(4) {
   width: 15%;
 }
-.community .inner section table tr td {
+.community .inner section .tab1 tr td {
   padding: 13px;
   border-bottom: 1px solid #ddd;
   text-align: center;
 }
-.community .inner section table tr td:nth-of-type(2) {
+.community .inner section .tab1 tr td:nth-of-type(2) {
   text-align: left;
 }
-.community .inner section table tr td:nth-of-type(3) {
+.community .inner section .tab1 tr td:nth-of-type(3) {
   font-family: "맑은 고딕";
 }
-.community .inner section table tr td a {
+.community .inner section .tab1 tr td a {
+  color: #333;
+  font-family: "arial";
+  line-height: 1.4;
+}
+.community .inner section .tab2 {
+  width: 100%;
+  height: 100%;
+  border-bottom: 2px solid rgba(255, 68, 0, 0.726);
+  border-collapse: collapse;
+}
+.community .inner section .tab2 tr:nth-of-type(even) {
+  background: #fff;
+}
+.community .inner section .tab2 tr:hover {
+  background: rgba(255, 68, 0, 0.24);
+}
+.community .inner section .tab2 tr th {
+  padding: 15px;
+  background: rgba(255, 68, 0, 0.74);
+  color: #fff;
+}
+.community .inner section .tab2 tr th:nth-of-type(1) {
+  width: 10%;
+}
+.community .inner section .tab2 tr th:nth-of-type(3) {
+  width: 15%;
+}
+.community .inner section .tab2 tr th:nth-of-type(4) {
+  width: 15%;
+}
+.community .inner section .tab2 tr td {
+  padding: 13px;
+  border-bottom: 1px solid #ddd;
+  text-align: center;
+}
+.community .inner section .tab2 tr td:nth-of-type(2) {
+  text-align: left;
+}
+.community .inner section .tab2 tr td:nth-of-type(3) {
+  font-family: "맑은 고딕";
+}
+.community .inner section .tab2 tr td a {
   color: #333;
   font-family: "arial";
   line-height: 1.4;
