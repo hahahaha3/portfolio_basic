@@ -16,7 +16,6 @@
     .inner {
         background: #f4e9df;
         margin-top: 40px;
-        border-radius: 10px;
         section {
             width: 580px;
             float: left;
@@ -28,7 +27,7 @@
             >p {
                 margin: 40px 0;
                 padding: 0 0px;
-                font: 15px/1.3 'arial';
+                font: 13px/1.3 'arial';
                 color: #888;
                 padding: 0 50px;
             }
@@ -84,7 +83,7 @@
                         background: #f4e9df;
                         font: bold 14px/1 'arial';
                         color: #131c55;;
-                        margin: 0 10px;
+                        margin: 0 10px 20px;
                         &:hover {
                             background: #131c55;
                             border: 1px solid #131c55;

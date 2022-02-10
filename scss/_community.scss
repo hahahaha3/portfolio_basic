@@ -10,10 +10,28 @@
     }
 
 	.inner {
-		section {
+		#sub_Txt {
+			margin-top: 50px;
+			text-align: center;
+			h4 {
+				font: 10px/1 'arial';
+				color: #444;
+			}
+			h2 {
+				width: 100%;
+				font: bold 25px/1 'arial';
+				margin: 20px auto;
+			}
+			p {
+				font: 10px/1.2 'arial';
+				color: #888;
+				padding: 0 240px;
+			}
+		}
+		#tab {
 			width: 1180px;
 			height: 650px;
-			margin: 50px auto;
+			margin: 50px auto 50px auto;
 			position: relative;
 			ul {
 				position: relative;
@@ -156,7 +174,22 @@
 @media screen and (max-width: $tablet) {
 	.community {
 		.inner {
-			section {
+			#sub_Txt {
+				margin-top: 50px;
+				text-align: center;
+				h4 {
+					font: 10px/1 'arial';
+					color: #444;
+				}
+				h2 {
+					font: bold 25px/1 'arial';
+					margin: 20px 0;
+				}
+				p {
+					display: none;
+				}
+			}
+			#tab {
 				width: 100%;
 			}
 			table {

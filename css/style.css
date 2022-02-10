@@ -2,6 +2,8 @@
 @import url("https://fonts.googleapis.com/css?family=Orbitron&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Otomanopee+One&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montagu+Slab&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap");
 #header {
   width: 100%;
   background: #131c55;
@@ -1398,7 +1400,7 @@ table {
   display: inline-flex;
   top: -250px;
   left: 50px;
-  font: bold 50px/1 "Roboto";
+  font: bold 40px/1 "Roboto";
   color: #fff;
   opacity: 1;
   border-bottom: 2px solid #fff;
@@ -1458,25 +1460,27 @@ table {
 
 /*banner_fix----------------------------------------------*/
 #banner_fix {
+  position: relative;
   width: 100%;
-  padding: 130px 0;
-  background: url(../img/banner_fix4.jpeg) no-repeat center/cover fixed;
+  height: 300px;
+  background: url(../img/visual1.jpg) no-repeat center/cover fixed;
 }
-#banner_fix .inner {
-  width: 1180px;
+#banner_fix h1 {
+  width: 70%;
+  position: relative;
+  top: 20%;
   margin: 0 auto;
-}
-#banner_fix .inner h1 {
-  font-weight: bold;
-  font-size: 30px;
-  font-family: arial;
+  padding: 0px 50px;
+  font: bold 40px/1.1 "Roboto Slab";
   color: #fff;
+  letter-spacing: 1px;
   text-align: center;
-  margin-bottom: 30px;
 }
-#banner_fix .inner p {
-  font: 14px/1.3 "Roboto";
-  color: #bbb;
+#banner_fix p {
+  position: relative;
+  top: 30%;
+  font: 15px/1.3 "arial";
+  color: #fff;
   text-align: center;
 }
 
@@ -1518,6 +1522,15 @@ table {
   #footer_sub .inner {
     width: 100%;
   }
+
+  /*banner_fix----------------------------------------------*/
+  #banner_fix h1 {
+    font: bold 30px/1.4 "Montagu Slab";
+    padding: 0 5%;
+  }
+  #banner_fix p {
+    font: 13px/1.3 "arial";
+  }
 }
 /* moblie 구간 ----------------------------------------------------------- */
 @media screen and (max-width: 539px) {
@@ -1546,6 +1559,14 @@ table {
   #footer_sub .inner ul li {
     margin-left: 0;
     margin: 5px;
+  }
+
+  /*banner_fix----------------------------------------------*/
+  #banner_fix h1 {
+    font: bold 20px/1.4 "Montagu Slab";
+  }
+  #banner_fix p {
+    font: 10px/1.3 "arial";
   }
 }
 .about .sub {
@@ -1608,7 +1629,7 @@ table {
   font: bold 40px/1 "arial";
   color: #131c55;
   top: 11vh;
-  left: 4vw;
+  left: 85px;
   z-index: 2;
 }
 .about .inner .division .welcome .sub_article > p {
@@ -1805,24 +1826,42 @@ table {
 .community .sub .sub_visual {
   background: url(../img/comm.jpeg) no-repeat center/cover;
 }
-.community .inner section {
+.community .inner #sub_Txt {
+  margin-top: 50px;
+  text-align: center;
+}
+.community .inner #sub_Txt h4 {
+  font: 10px/1 "arial";
+  color: #444;
+}
+.community .inner #sub_Txt h2 {
+  width: 100%;
+  font: bold 25px/1 "arial";
+  margin: 20px auto;
+}
+.community .inner #sub_Txt p {
+  font: 10px/1.2 "arial";
+  color: #888;
+  padding: 0 240px;
+}
+.community .inner #tab {
   width: 1180px;
   height: 650px;
-  margin: 50px auto;
+  margin: 50px auto 50px auto;
   position: relative;
 }
-.community .inner section ul {
+.community .inner #tab ul {
   position: relative;
   width: 100%;
   top: 0;
   left: 0;
   text-align: center;
 }
-.community .inner section ul li {
+.community .inner #tab ul li {
   width: 49%;
   display: inline-block;
 }
-.community .inner section ul li a {
+.community .inner #tab ul li a {
   display: block;
   width: 100%;
   height: 40px;
@@ -1832,11 +1871,11 @@ table {
   border-right: 1px solid #131c55;
   border-left: 1px solid #131c55;
 }
-.community .inner section ul li.on a {
+.community .inner #tab ul li.on a {
   border-top: none;
   border-bottom: 4px solid #131c55;
 }
-.community .inner section article div {
+.community .inner #tab article div {
   width: 100%;
   height: 600px;
   position: absolute;
@@ -1848,90 +1887,90 @@ table {
   z-index: 1;
   opacity: 0;
 }
-.community .inner section article div.on {
+.community .inner #tab article div.on {
   z-index: 2;
   opacity: 1;
 }
-.community .inner section .tab1 {
+.community .inner #tab .tab1 {
   width: 100%;
   height: 100%;
   border-bottom: 2px solid #131c55;
   border-collapse: collapse;
 }
-.community .inner section .tab1 tr:nth-of-type(even) {
+.community .inner #tab .tab1 tr:nth-of-type(even) {
   background: #fff;
 }
-.community .inner section .tab1 tr:hover {
+.community .inner #tab .tab1 tr:hover {
   background: #131c5541;
 }
-.community .inner section .tab1 tr th {
+.community .inner #tab .tab1 tr th {
   padding: 15px;
   background: #131c55;
   color: #fff;
 }
-.community .inner section .tab1 tr th:nth-of-type(1) {
+.community .inner #tab .tab1 tr th:nth-of-type(1) {
   width: 10%;
 }
-.community .inner section .tab1 tr th:nth-of-type(3) {
+.community .inner #tab .tab1 tr th:nth-of-type(3) {
   width: 15%;
 }
-.community .inner section .tab1 tr th:nth-of-type(4) {
+.community .inner #tab .tab1 tr th:nth-of-type(4) {
   width: 15%;
 }
-.community .inner section .tab1 tr td {
+.community .inner #tab .tab1 tr td {
   padding: 13px;
   border-bottom: 1px solid #ddd;
   text-align: center;
 }
-.community .inner section .tab1 tr td:nth-of-type(2) {
+.community .inner #tab .tab1 tr td:nth-of-type(2) {
   text-align: left;
 }
-.community .inner section .tab1 tr td:nth-of-type(3) {
+.community .inner #tab .tab1 tr td:nth-of-type(3) {
   font-family: "맑은 고딕";
 }
-.community .inner section .tab1 tr td a {
+.community .inner #tab .tab1 tr td a {
   color: #333;
   font-family: "arial";
   line-height: 1.4;
 }
-.community .inner section .tab2 {
+.community .inner #tab .tab2 {
   width: 100%;
   height: 100%;
   border-bottom: 2px solid rgba(255, 68, 0, 0.726);
   border-collapse: collapse;
 }
-.community .inner section .tab2 tr:nth-of-type(even) {
+.community .inner #tab .tab2 tr:nth-of-type(even) {
   background: #fff;
 }
-.community .inner section .tab2 tr:hover {
+.community .inner #tab .tab2 tr:hover {
   background: rgba(255, 68, 0, 0.24);
 }
-.community .inner section .tab2 tr th {
+.community .inner #tab .tab2 tr th {
   padding: 15px;
   background: rgba(255, 68, 0, 0.89);
   color: #fff;
 }
-.community .inner section .tab2 tr th:nth-of-type(1) {
+.community .inner #tab .tab2 tr th:nth-of-type(1) {
   width: 10%;
 }
-.community .inner section .tab2 tr th:nth-of-type(3) {
+.community .inner #tab .tab2 tr th:nth-of-type(3) {
   width: 15%;
 }
-.community .inner section .tab2 tr th:nth-of-type(4) {
+.community .inner #tab .tab2 tr th:nth-of-type(4) {
   width: 15%;
 }
-.community .inner section .tab2 tr td {
+.community .inner #tab .tab2 tr td {
   padding: 13px;
   border-bottom: 1px solid #ddd;
   text-align: center;
 }
-.community .inner section .tab2 tr td:nth-of-type(2) {
+.community .inner #tab .tab2 tr td:nth-of-type(2) {
   text-align: left;
 }
-.community .inner section .tab2 tr td:nth-of-type(3) {
+.community .inner #tab .tab2 tr td:nth-of-type(3) {
   font-family: "맑은 고딕";
 }
-.community .inner section .tab2 tr td a {
+.community .inner #tab .tab2 tr td a {
   color: #333;
   font-family: "arial";
   line-height: 1.4;
@@ -1939,7 +1978,22 @@ table {
 
 /* tablet ---------------------------------------------------- */
 @media screen and (max-width: 1179px) {
-  .community .inner section {
+  .community .inner #sub_Txt {
+    margin-top: 50px;
+    text-align: center;
+  }
+  .community .inner #sub_Txt h4 {
+    font: 10px/1 "arial";
+    color: #444;
+  }
+  .community .inner #sub_Txt h2 {
+    font: bold 25px/1 "arial";
+    margin: 20px 0;
+  }
+  .community .inner #sub_Txt p {
+    display: none;
+  }
+  .community .inner #tab {
     width: 100%;
   }
   .community .inner table tr th:nth-of-type(1) {
@@ -2172,8 +2226,10 @@ aside .close {
   }
   .gallery #gallery #wrap #list .item .e_item a {
     width: 30%;
+    height: 100%;
   }
   .gallery #gallery #wrap #list .item .e_item a img {
+    height: 100%;
     object-fit: contain;
   }
   .gallery #gallery #searchBox input[type=text] {
@@ -2214,6 +2270,9 @@ aside .close {
   .gallery #gallery #wrap #list .item .e_item a {
     width: 50%;
   }
+  .gallery #gallery #wrap #list .item .e_item a img {
+    height: 100%;
+  }
   .gallery #gallery #searchBox input[type=text] {
     width: 150px;
   }
@@ -2253,7 +2312,6 @@ aside .close {
 .join .inner {
   background: #f4e9df;
   margin-top: 40px;
-  border-radius: 10px;
 }
 .join .inner section {
   width: 580px;
@@ -2267,7 +2325,7 @@ aside .close {
 .join .inner section > p {
   margin: 40px 0;
   padding: 0 0px;
-  font: 15px/1.3 "arial";
+  font: 13px/1.3 "arial";
   color: #888;
   padding: 0 50px;
 }
@@ -2323,7 +2381,7 @@ aside .close {
   background: #f4e9df;
   font: bold 14px/1 "arial";
   color: #131c55;
-  margin: 0 10px;
+  margin: 0 10px 20px;
 }
 .join .inner #member table th input[type=reset]:hover, .join .inner #member table th input[type=submit]:hover {
   background: #131c55;
